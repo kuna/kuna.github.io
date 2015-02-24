@@ -192,6 +192,7 @@
 		font-weight: 300;
 		line-height: 1;
 		letter-spacing: -1px;
+		color: #000;
 	}
 	/* RESPONSIVE CSS
 	-------------------------------------------------- */
@@ -273,7 +274,10 @@
 			line-height: 1.5;
 		}
 
+		.hidewhensmall { display:none; }
+		.showwhensmall { display:inline; }
 	}
+	.showwhensmall { display:none; }
 
 	li { margin-bottom:10px; }
 	ul {}
@@ -289,7 +293,7 @@
 
 	<div style="background-color:black;">
 	<style>.movie { float:right; margin-top:80px; margin-right:20px; } </style>
-	<div id="myCarousel" class="carousel slide">
+	<div id="myCarousel" class="carousel slide hidewhensmall">
 		<div class="carousel-inner">
 			<!--
 			<div class="item active">
@@ -327,7 +331,7 @@
 					<div class="movie"><iframe width="560" height="315" src="https://www.youtube.com/embed/mpYs_q6ju6A" frameborder="0" allowfullscreen></iframe></div>
 					<div class="carousel-caption">
 						<h1>Dandelion Sparkle!!</h1>
-						<p class="lead"></p>
+						<p class="lead">p_d</p>
 					</div>
 				</div>
 			</div>
@@ -339,9 +343,9 @@
 
 	<div class="container">
 		<div class="hanna" style="overflow:hidden; margin-bottom:-80px; margin-top:-60px;">
-		    <img class="pull-right" src="./img/tail.png">
+		    <img class="pull-right hidewhensmall" src="./img/tail.png">
 		    <img class="pull-right" src="./img/kaede.png">
-			<p class="lead" style="margin-top:60px;">Make your BGM before start!</p>
+			<p class="lead hidewhensmall" style="margin-top:60px;">Make your BGM before start!</p>
 		</div>
 		<hr class="featurette-divider">
 		<div class="">
@@ -369,19 +373,21 @@
 			<p>&nbsp;</p>
 
 			<ul class="bibilography">
-				<li><span class="yr">2013</span></li>
+				<li><span class="yr">2015</span></li>
+				<li><img src="./img/sad.png"></li>
+				<li><span class="yr">2014</span></li>
 				<li><a href="https://github.com/kuna/iBeatConAndroid">iBeatcon For Android</a><span class="desc"><a href="https://t.co/CyEK0kf5ff">Appstore</a> / <a href="https://github.com/kuna/KShootController">SDVX(Kshoot) Controller</a></span></li>
 				<li><a href="https://github.com/kuna/Rhythmus_java">Rhythmus Java Edition (For Android)</a></li>
 				<li>Controller based on Smartphone Sensor
 					<span class="desc"><a href="https://github.com/kuna/game_controller_client">Android Client</a> / <a href="https://github.com/kuna/controller_client_web">Web Client</a> / <a href="https://github.com/kuna/controller_server">Server</a></span></li>
-				<li><span class="yr">2012</span></li>
+				<li><span class="yr">2013</span></li>
 				<li><a href="https://github.com/kuna/LR2Twit">LR2Twit</a>
 					<span class="desc">w/ <a href="https://github.com/kuna/game_controller_client">LR2DLL</a> injected to Lunatic Rave 2.</span></li>
 				<li><a href="http://kuna.wo.tc/1295">Jubeat Screen Unlocker</a></li>
-				<li><span class="yr">2011</span></li>
+				<li><span class="yr">2012</span></li>
 				<li><a href="https://github.com/kuna/NovelViewer">NovelViewer</a></li>
 				<li><a href="http://kuna.wo.tc/1245">MP3 Lyrics Master</a></li>
-				<li><span class="yr">2010</span></li>
+				<li><span class="yr">2011</span></li>
 				<li><a href="http://kuna.wo.tc/1092">TTXMLParser</a></li>
 			</ul>
 
@@ -428,7 +434,10 @@ group를 일일이 관리하고 입력하는 것이 포인트. 자동으로 관�
 				<li>짤방 분류 시스템
 					<span class="desc">
 <pre>
-짤방을 
+imgtl based system.
+이미지는 선행적으로 업로드가 되고, 태깅은 이후에 하는 방식으로 됨. 메뉴 구성은 크게 업로드/검색/태깅으로 나뉘어지며, '태깅'란에서는 자신이 올린 사진인가+오래전 올려진 순+조회수가 많은 순대로 태깅 안된 사진을 보여주어 태깅을 할 수 있도록 함.
+기본적으로 움짤인가/2D인가/3D인가/사람인가로 크게 기준을 나누는 식으로 진행하며, 이후 생각나는 키워드들을 모조리 입력하는 것으로 처리한다.
+각 이미지들은 google에 의해 search되는 것을 전제로 하며, 유입된 query를 분석하여 해당 이미지의 태그에 자동으로 반영하는 안을 고려한다.
 </pre>
 					</span></li>
 			</ul>

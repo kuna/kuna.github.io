@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link href="./css/bootstrap.css" rel="stylesheet">
+	<link href="./css/bootstrap-responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css">
+
+
+	<!-- http://www.lucypark.kr/blog/2014/06/11/korean-google-fonts-preview/ -->
+	<script src="./js/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+	<!--
+	<div class="navbar-wrapper">
+		<div class="container">
+			<div class="navbar navbar-inverse">
+				<div class="navbar-inner">
+					<a class="brand" href="#">kuna.github.io</a>
+					<ul class="nav">
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Major works</a></li>
+						<li><a href="#">TODOs</a></li>
+						<li><a href="#">Links</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+	<style>
+	/* GLOBAL STYLES
+	-------------------------------------------------- */
+	/* Padding below the footer and lighter body text */
+
+	body {
+		padding-bottom: 40px;
+		color: #5a5a5a;
+		font-family: 'Jeju Gothic',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	}
+	.carousel-control { font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+
+
+	/* CUSTOMIZE THE NAVBAR
+	-------------------------------------------------- */
+
+	/* Special class on .container surrounding .navbar, used for positioning it into place. */
+	.navbar-wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		margin-top: 20px;
+		margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+	}
+	.navbar-wrapper .navbar {
+
+	}
+
+	/* Remove border and change up box shadow for more contrast */
+	.navbar .navbar-inner {
+		border: 0;
+		-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+		-moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+		box-shadow: 0 2px 10px rgba(0,0,0,.25);
+	}
+
+	/* Downsize the brand/project name a bit */
+	.navbar .brand {
+		padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+		font-size: 16px;
+		font-weight: bold;
+		text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+	}
+
+	/* Navbar links: increase padding for taller navbar */
+	.navbar .nav > li > a {
+		padding: 15px 20px;
+	}
+
+	/* Offset the responsive button for proper vertical alignment */
+	.navbar .btn-navbar {
+		margin-top: 10px;
+	}
+
+
+
+	/* CUSTOMIZE THE CAROUSEL
+	-------------------------------------------------- */
+
+	/* Carousel base class */
+	.carousel {
+		margin-bottom: 60px;
+	}
+
+	.carousel .container {
+		position: relative;
+		z-index: 9;
+	}
+
+	.carousel-control {
+		height: 80px;
+		margin-top: 0;
+		font-size: 120px;
+		text-shadow: 0 1px 1px rgba(0,0,0,.4);
+		background-color: transparent;
+		border: 0;
+		z-index: 10;
+	}
+
+	.carousel .item {
+		height: 500px;
+	}
+	.carousel img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		height: 500px;
+	}
+
+	.carousel-caption {
+		background-color: transparent;
+		position: static;
+		max-width: 550px;
+		padding: 0 20px;
+		margin-top: 200px;
+	}
+	.carousel-caption h1,
+	.carousel-caption .lead {
+		margin: 0;
+		line-height: 1.25;
+		color: #fff;
+		text-shadow: 0 1px 1px rgba(0,0,0,.4);
+	}
+	.carousel-caption .btn {
+		margin-top: 10px;
+	}
+
+
+
+	/* MARKETING CONTENT
+	-------------------------------------------------- */
+
+	/* Center align the text within the three columns below the carousel */
+	.marketing .span4 {
+		text-align: center;
+	}
+	.marketing h2 {
+		font-weight: normal;
+	}
+	.marketing .span4 p {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+
+	/* Featurettes
+	------------------------- */
+
+	.featurette-divider {
+		margin: 80px 0; /* Space out the Bootstrap <hr> more */
+	}
+	.featurette {
+		padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+		overflow: hidden; /* Vertically center images part 2: clear their floats. */
+	}
+	.featurette-image {
+		margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+	}
+
+	/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+	.featurette-image.pull-left {
+		margin-right: 40px;
+	}
+	.featurette-image.pull-right {
+		margin-left: 40px;
+	}
+
+	/* Thin out the marketing headings */
+	.featurette-heading {
+		font-size: 50px;
+		font-weight: 300;
+		line-height: 1;
+		letter-spacing: -1px;
+	}
+	/* RESPONSIVE CSS
+	-------------------------------------------------- */
+
+	@media (max-width: 979px) {
+
+		.container.navbar-wrapper {
+			margin-bottom: 0;
+			width: auto;
+		}
+		.navbar-inner {
+			border-radius: 0;
+			margin: -20px 0;
+		}
+
+		.carousel .item {
+			height: 500px;
+		}
+		.carousel img {
+			width: auto;
+			height: 500px;
+		}
+
+		.featurette {
+			height: auto;
+			padding: 0;
+		}
+		.featurette-image.pull-left,
+		.featurette-image.pull-right {
+			display: block;
+			float: none;
+			max-width: 40%;
+			margin: 0 auto 20px;
+		}
+	}
+
+
+	@media (max-width: 767px) {
+
+		.navbar-inner {
+			margin: -20px;
+		}
+
+		.carousel {
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+		.carousel .container {
+
+		}
+		.carousel .item {
+			height: 300px;
+		}
+		.carousel img {
+			height: 300px;
+		}
+		.carousel-caption {
+			width: 65%;
+			padding: 0 70px;
+			margin-top: 100px;
+		}
+		.carousel-caption h1 {
+			font-size: 30px;
+		}
+		.carousel-caption .lead,
+		.carousel-caption .btn {
+			font-size: 18px;
+		}
+
+		.marketing .span4 + .span4 {
+			margin-top: 40px;
+		}
+
+		.featurette-heading {
+			font-size: 30px;
+		}
+		.featurette .lead {
+			font-size: 18px;
+			line-height: 1.5;
+		}
+
+	}
+
+	li { margin-bottom:10px; }
+	ul {}
+	.bibilography { text-align: center; list-style: none; font-size:24pt; }
+	.bibilography li { margin-top:80px; }
+	.bibilography .yr { color:#ccc; border-top:5px solid #ccc; border-bottom: 5px solid #ccc; padding: 5px 20px 5px 20px ; }
+	.bibilography .desc { margin-top:20px; font-size:15px; display:block; clear:both; }
+	.bibilography pre { text-align: left;}
+
+
+	.bibilography, .featurette-heading, .hanna { font-family:'Hanna'; }
+	</style>
+
+	<div style="background-color:black;">
+	<style>.movie { float:right; margin-top:80px; margin-right:20px; } </style>
+	<div id="myCarousel" class="carousel slide">
+		<div class="carousel-inner">
+			<!--
+			<div class="item active">
+				<img src="./img/stained.jpg">
+				<div class="container">
+					<div class="carousel-caption">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/OKObDAzf1vw" frameborder="0" allowfullscreen></iframe>
+						<h1>뭘 쓸지 모르겠다.</h1>
+						<p class="lead">아직 암것도 쓰지 않을 것이다.</p>
+						<a class="btn btn-large btn-primary" href="#">누르지 마시오.</a>
+					</div>
+				</div>
+			</div>
+			-->
+			<div class="item active">
+				<div class="container">
+					<div class="movie"><iframe width="560" height="315" src="https://www.youtube.com/embed/OKObDAzf1vw" frameborder="0" allowfullscreen></iframe></div>
+					<div class="carousel-caption">
+						<h1>fragments J-CoreRemix</h1>
+						<p class="lead">polysha</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="container">
+					<div class="movie"><iframe width="420" height="315" src="https://www.youtube.com/embed/ckmyxBOcPxc" frameborder="0" allowfullscreen></iframe></div>
+					<div class="carousel-caption">
+						<h1>Apollo</h1>
+						<p class="lead">xelloscope</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="container">
+					<div class="movie"><iframe width="560" height="315" src="https://www.youtube.com/embed/mpYs_q6ju6A" frameborder="0" allowfullscreen></iframe></div>
+					<div class="carousel-caption">
+						<h1>Dandelion Sparkle!!</h1>
+						<p class="lead"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	</div>
+	</div>
+
+	<div class="container">
+		<div class="hanna" style="overflow:hidden; margin-bottom:-80px; margin-top:-60px;">
+		    <img class="pull-right" src="./img/tail.png">
+		    <img class="pull-right" src="./img/kaede.png">
+			<p class="lead" style="margin-top:60px;">Make your BGM before start!</p>
+		</div>
+		<hr class="featurette-divider">
+		<div class="">
+			<h2 class="featurette-heading">Profile<span class="muted"></span></h2>
+			<p>&nbsp;</p>
+			<p class="lead">93, SNUCSE'12 undergraduate, Engineer, maybe.</p>
+			<p class="lead">and my favorites are ...</p>
+			<ul class="bibilography">
+				<li>game<span class="desc">like rhythmgame(IIDX, BMS, pump, <i class="muted">DDR, jubeat, reflec, SDVX</i>), LoL. <i class="muted">no time to play others</i><span></li>
+				<li>coding <span class="desc">something - js, java, lisp, c/cpp, python, django, R, etc... w/ various project - bot, simulator, AI, bigdata, server tech, etc.</span></li>
+				<li>music<span class="desc">listening, composing, play piano, trance, contemporary music, hardcore.</span></li>
+				<li>otaku<span class="desc">drawing, inspecting(?)</span></li>
+				<li>watching<span class="desc">youtube w/ documentary mostly National Geography, or gaming.</span></li>
+				<li>travel<span class="desc">and taking some sceneary pics</span></li>
+				<li>logging<span class="desc">like <strike>twitting</strike>, blogging ...</span></li>
+				<li>book<span class="desc">about fantasy novel, modern wars, computer science, mathmatic, language, etc.</span></li>
+			</ul>
+
+			<p>&nbsp;</p>
+			<p class="lead">안녕하세요.</p>
+		</div>
+		<hr class="featurette-divider">
+		<div class="">
+			<h2 class="featurette-heading">Major works<span class="muted"></span></h2>
+			<p>&nbsp;</p>
+
+			<ul class="bibilography">
+				<li><span class="yr">2013</span></li>
+				<li><a href="https://github.com/kuna/iBeatConAndroid">iBeatcon For Android</a><span class="desc"><a href="https://t.co/CyEK0kf5ff">Appstore</a> / <a href="https://github.com/kuna/KShootController">SDVX(Kshoot) Controller</a></span></li>
+				<li><a href="https://github.com/kuna/Rhythmus_java">Rhythmus Java Edition (For Android)</a></li>
+				<li>Controller based on Smartphone Sensor
+					<span class="desc"><a href="https://github.com/kuna/game_controller_client">Android Client</a> / <a href="https://github.com/kuna/controller_client_web">Web Client</a> / <a href="https://github.com/kuna/controller_server">Server</a></span></li>
+				<li><span class="yr">2012</span></li>
+				<li><a href="https://github.com/kuna/LR2Twit">LR2Twit</a>
+					<span class="desc">w/ <a href="https://github.com/kuna/game_controller_client">LR2DLL</a> injected to Lunatic Rave 2.</span></li>
+				<li><a href="http://kuna.wo.tc/1295">Jubeat Screen Unlocker</a></li>
+				<li><span class="yr">2011</span></li>
+				<li><a href="https://github.com/kuna/NovelViewer">NovelViewer</a></li>
+				<li><a href="http://kuna.wo.tc/1245">MP3 Lyrics Master</a></li>
+				<li><span class="yr">2010</span></li>
+				<li><a href="http://kuna.wo.tc/1092">TTXMLParser</a></li>
+			</ul>
+
+			<i>
+				<p class="muted">minor works shortcut</p>
+				<ul>
+				<li><a href="http://kgdgwn98.snucse.org/everclock">everclock</a></li>
+				<li><a href="http://kgdgwn98.snucse.org/ayadebris">aya debris in mad father opening</a></li>
+				<li><a href="http://kgdgwn98.snucse.org/killcouple">(swm) couple breaker</a></li>
+				<li><a href="http://kgdgwn98.snucse.org/rpgxp"><strike>rpgxp web emulator</strike>(preparing)</a></li>
+				<li><a href="http://kgdgwn98.snucse.org/stepmania">stepmania on web</a></li>
+				<li><a href="http://kgdgwn98.snucse.org/box2dweb">box2d</a></li>
+				<li><a href="http://kgdgwn98.snucse.org/tijacker">Tistory music uri hijacker</a></li>
+				<li><a href="http://kgdgwn98.snucse.org/rmstyle">For someone annoyed of stupid Tistory Editor...</a></li>
+				<li><a href="http://kgdgwn98.snucse.org/sabun/min.html">sabun scraper (absolute.pv.land.to/uploader)</a></li>
+				<li><a href="http://kgdgwn98.snucse.org/num2aheui">num2aheui / string2aheui</a></li>
+				<li><a href="https://github.com/kuna/TweetRemover">TweetRemover</a></li>
+				<li><a href="https://github.com/kuna/SNUFood_Twitter">SNUFood Twitter Bot</a></li>
+				<li><a href="https://github.com/kuna/BGMStoreAutoPlayer">BGMStoreAutoPlayer</a></li>
+				<li><a href="https://github.com/kuna/LyricsMaster">LyricsMaster</a></li>
+				<li class="muted">and more from github or blog ...</li>
+				</ul>
+			</i>
+		</div>
+		<hr class="featurette-divider">
+		<div class="">
+			<h2 class="featurette-heading">TODOs<span class="muted"></span></h2>
+			<p>&nbsp;</p>
+			<ul class="bibilography">
+				<li><a href="https://github.com/kuna/LR2csv">LR2 emulator</a></li>
+				<li>warning.or.kr delay time measurer</li>
+				<li>BMS parser with Nim</li>
+				<li>BMS sabun database
+					<span class="desc">
+<pre>
+unicode based
+SQLite
+server side: python
+record will be like: title / artist / ... / level / exlevel / keys / hash / 'group' / ... / maxbpm / minbpm
+group를 일일이 관리하고 입력하는 것이 포인트. 자동으로 관리하기 위해서, 차분 업로드 후, exlevel 직접 입력하고, 검색을 통해서 다른 차분이랑 맞는 거 있으면 거기랑 인덱스 맞추는 작업을 하게 함.
+</pre>
+					</span>
+				</li>
+				<li>짤방 분류 시스템
+					<span class="desc">
+<pre>
+짤방을 
+</pre>
+					</span></li>
+			</ul>
+		</div>
+		<hr class="featurette-divider">
+		<div class="">
+			<h2 class="featurette-heading">Links<span class="muted"></span></h2>
+			<p>&nbsp;</p>
+			<ul>
+				<li><a href="https://www.linkedin.com/profile/view?id=371682557">Linkedin</a></li>
+				<li><a href="http://kuna.wo.tc/">Tistory</a></li>
+				<li>Tumblr</li>
+				<li><a href="http://twitter.com/kuna_kr">Twitter</a></li>
+				<li><a href="http://facebook.com/kgdgwn98">Facebook</a></li>
+				<li><a href="https://soundcloud.com/kuna_kr">SoundCloud</a></li>
+				<li><a href="https://github.com/kuna">Github</a></li>
+				<li><a href="http://www.pixiv.net/member.php?id=4005733">Pixiv</a></li>
+				<li><a href="http://stairway.sakura.ne.jp/bms/LunaticRave2/?contents=player&page=31478">Stairway</a></li>
+				<li><a href="http://iidx.me/kuna/">iidx.me</a></li>
+				<li><a href="http://op.gg/summoner/userName=%ED%95%98%EB%B2%84%EB%93%9C%EA%B5%90%EC%88%98">League Of Legends</a></li>
+			</ul>
+		</div>
+		<hr class="featurette-divider">
+		<div class="">
+			<h2 class="featurette-heading">Contact<span class="muted"></span></h2>
+			<p class="lead">Send email to <img src="http://services.nexodyne.com/email/icon/z9BwmODvoo0%3D/6l2hc6w%3D/R01haWw%3D/0/image.png"> first.</p>
+			<p class="muted">기부는 1002-434-910651, 우리은행, Dongwon K.으로 받습니다 해주십쇼...</p>
+			<p></p>
+		</div>
+	</div>
+
+	<div class="container">
+		<hr class="featurette-divider">
+		Latest update: 02-04-15
+	</div>
+
+	<!-- to make load faster, place js at the bottom -->
+	<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

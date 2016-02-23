@@ -11,10 +11,12 @@
 	<link href="./css/bootstrap-responsive.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css">
+	<link href="./css/qube.css" rel="stylesheet">
 
 
 	<!-- http://www.lucypark.kr/blog/2014/06/11/korean-google-fonts-preview/ -->
 	<script src="./js/jquery-2.1.3.min.js"></script>
+	<script src="./js/qube.js"></script>
 </head>
 <body>
 	<!--
@@ -329,6 +331,20 @@
 	</div>
 	</div>-->
 
+	<div class="qube">
+		<div class="eye left">
+			<div class="pupil"></div>
+			<div class="highlight h_left"></div>
+		</div>
+		<div class="eye right">
+			<div class="pupil"></div>
+			<div class="highlight h_right"></div>
+		</div>
+		
+		<div class="mouth left"></div>
+		<div class="mouth right"></div>
+	</div>
+
 	<div class="container">
 		<!-- movie helper
 		<div class="hanna" style="overflow:hidden; margin-bottom:-80px; margin-top:-60px;">
@@ -359,8 +375,11 @@
 			<p>&nbsp;</p>
 
 			<ul class="bibilography">
+				<li><a href="https://github.com/kuna/bmsbelplus">bmsbel+</a> <a href="https://github.com/kuna/bmx2ogg">bmx2ogg</a> <a href="https://github.com/kuna/simplebmxplayer">simplebmxplayer</a></a></li>
+				<li>Contribution to django / SDL2_image</li>
+				<li><span class="yr">2016</span></li>
 				<!--<li><img src="./img/sad.png"></li>-->
-				<li><a href="https://github.com/kuna/iidxranktable">iidxranktable</a> <a href="http://54.69.39.175/iidx">AWS link</a></li>
+				<li><a href="https://github.com/kuna/iidxranktable">iidxranktable</a> <a href="http://insane.pe.kr/iidx">AWS link</a></li>
 				<li><span class="yr">2015</span></li>
 				<li><a href="http://www.bswmodelagency.com">bswmodelagency site consulted</a></li>
 				<li><span class="yr">2014</span></li>
@@ -402,36 +421,6 @@
 		</div>
 		<hr class="featurette-divider">
 		<div class="">
-			<h2 class="featurette-heading">TODOs<span class="muted"></span></h2>
-			<p>&nbsp;</p>
-			<ul class="bibilography">
-				<li><a href="https://github.com/kuna/LR2csv">LR2 emulator</a></li>
-				<li>warning.or.kr delay time measurer</li>
-				<li>BMS parser with Nim</li>
-				<li>BMS sabun database
-					<span class="desc">
-<pre>
-unicode based
-SQLite
-server side: python
-record will be like: title / artist / ... / level / exlevel / keys / hash / 'group' / ... / maxbpm / minbpm
-group를 일일이 관리하고 입력하는 것이 포인트. 자동으로 관리하기 위해서, 차분 업로드 후, exlevel 직접 입력하고, 검색을 통해서 다른 차분이랑 맞는 거 있으면 거기랑 인덱스 맞추는 작업을 하게 함.
-</pre>
-					</span>
-				</li>
-				<li>짤방 분류 시스템
-					<span class="desc">
-<pre>
-imgtl based system.
-이미지는 선행적으로 업로드가 되고, 태깅은 이후에 하는 방식으로 됨. 메뉴 구성은 크게 업로드/검색/태깅으로 나뉘어지며, '태깅'란에서는 자신이 올린 사진인가+오래전 올려진 순+조회수가 많은 순대로 태깅 안된 사진을 보여주어 태깅을 할 수 있도록 함.
-기본적으로 움짤인가/2D인가/3D인가/사람인가로 크게 기준을 나누는 식으로 진행하며, 이후 생각나는 키워드들을 모조리 입력하는 것으로 처리한다.
-각 이미지들은 google에 의해 search되는 것을 전제로 하며, 유입된 query를 분석하여 해당 이미지의 태그에 자동으로 반영하는 안을 고려한다.
-</pre>
-					</span></li>
-			</ul>
-		</div>
-		<hr class="featurette-divider">
-		<div class="">
 			<h2 class="featurette-heading">Links<span class="muted"></span></h2>
 			<p>&nbsp;</p>
 			<ul>
@@ -440,28 +429,26 @@ imgtl based system.
 				<li>Tumblr</li>
 				<li><a href="http://ask.fm/kunakr">ask.fm</a></li>
 				<li><a href="http://twitter.com/lazykuna">Twitter</a></li>
-				<li><a href="http://facebook.com/kgdgwn98">Facebook</a></li>
 				<li><a href="https://soundcloud.com/kuna_kr">SoundCloud</a></li>
 				<li><a href="https://github.com/kuna">Github</a></li>
 				<li><a href="http://www.pixiv.net/member.php?id=4005733">Pixiv</a></li>
 				<li><a href="http://stairway.sakura.ne.jp/bms/LunaticRave2/?contents=player&page=31478">Stairway</a></li>
 				<li><a href="http://iidx.me/kuna/">iidx.me</a></li>
-				<li><a href="http://op.gg/summoner/userName=%ED%95%98%EB%B2%84%EB%93%9C%EA%B5%90%EC%88%98">League Of Legends</a></li>
 			</ul>
 		</div>
 		<hr class="featurette-divider">
 		<div class="">
 			<h2 class="featurette-heading">Contact<span class="muted"></span></h2>
-			<p class="lead">Send email to <img src="http://services.nexodyne.com/email/icon/z9BwmODvoo0%3D/6l2hc6w%3D/R01haWw%3D/0/image.png"> first.</p>
-			<p class="muted">1002-434-910651, woori bank, Dongwon K.</p>
+			<p class="lead"><img src="http://services.nexodyne.com/email/icon/z9BwmODvoo0%3D/6l2hc6w%3D/R01haWw%3D/0/image.png"></p>
+			<p class="muted">Make a donation for poor bachelor to make more useless things 1002-434-910651</p>
 			<p></p>
 		</div>
 	</div>
 
 	<div class="container">
 		<hr class="featurette-divider">
-		<p>Latest update: July-10-15</p>
-		<p>used bootstrap. embed, img contents are not owned by me. if there's any issue, contact me.</p>
+		<p>Latest update: 16-02-23</p>
+		<p>Used bootstrap</p>
 	</div>
 
 	<!-- to make load faster, place js at the bottom -->

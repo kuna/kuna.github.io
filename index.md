@@ -6,7 +6,7 @@ layout: default
 ## Profile
 * Dongwon Kang a.k.a. @lazykuna
 * Major in Computer Science at Seoul National University (2012 ~ 2016)
-* [Biohealth Lab](http://biohealth.snu.ac.kr/members/dongwon_kang.html) at Seoul Nation University (2016 ~ )
+* MS in [Biohealth Lab](http://biohealth.snu.ac.kr/members/dongwon_kang.html) at Seoul National University (2016 ~ )
 
 ---
 

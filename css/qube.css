@@ -1,23 +1,50 @@
 @charset "utf-8";
 
-.qube	{ width: 800px; height: 600px; display: block; margin: 100px auto; background: none; position: relative;}
-.qube div	{ position: absolute; }
-.eye		{ width: 90px; height: 90px; top: 250px; 
-				border-radius: 50px; -moz-border-radius: 50px; -webkit-border-radius: 50px; 
-				border: 2px solid #333; 
-				background: #bb2967}
-.left		{ left: 185px; }				
-.right		{ right: 185px; }
-.pupil		{ width: 50px; height: 50px; left: 20px; top: 20px; 
-				border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;
-				background: #780026}				
-.highlight	{ width: 25px; height: 25px; right: 15px; top: 15px; 
-				border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;
-				background: #fff}	
+/* original copyright: zvuc. */
 
-.mouth		{ width: 40px; height: 10px; bottom: 140px; margin: 0 173px;			
-				-moz-border-radius-bottomleft: 35px 20px;
-				-moz-border-radius-bottomright: 35px 20px;
-				-webkit-border-bottom-left-radius: 35px 20px;
-				-webkit-border-bottom-right-radius: 35px 20px;
-				border: 1px solid #333; border-bottom: 2px solid #333; border-top: none; }
+/* big qube */
+.qube	{ width: 800px; height: 400px; display: block; margin: 0 auto; background: none; position: relative; border: 10px solid #fff; border-radius: 100%; margin-bottom: 100px; }
+.qube div	{ position: absolute; }
+.qube .eye		{ width: 90px; height: 90px; top: 250px; 
+				border-radius: 50px; border: 2px solid #333; 
+				background: #bb2967}
+.qube .left		{ left: 185px; }				
+.qube .right		{ right: 185px; }
+.qube .pupil		{ width: 50px; height: 50px; left: 20px; top: 20px; 
+				border-radius: 30px; background: #780026}				
+.qube .highlight	{ width: 25px; height: 25px; right: 15px; top: 15px; 
+				border-radius: 30px; background: #fff}	
+
+.qube .mouth		{ width: 40px; height: 10px; bottom: 140px; margin: 0 173px;			
+				border: 1px solid #333; border-bottom: 2px solid #333; border-top: none; border-radius: 0 0 20px 35px; }
+
+
+
+/* small qube */
+.qube_s	{ width: 150px; height: 120px; display: block; margin: 0 auto; background: rgba(255,255,255,0.9); position: relative; border: 3px solid #fff; border-radius: 100% 100% 130px 130px; margin-bottom: 30px; }
+.qube_s div	{ position: absolute; }
+.qube_s .eye		{ width: 28px; height: 28px; top: 45px; 
+				border-radius: 50px; border: 1px solid #333; 
+				background: #bb2967}
+.qube_s .ear		{ top: 0; width: 28px; height: 28px; margin: 0 0;  background: #eee; }
+.qube_s .ear.left,
+.qube_s .ear .left      { border-radius: 5px 100% 0 0; }
+.qube_s .ear.right,
+.qube_s .ear .right      { border-radius: 100% 5px 0 0; }
+.qube_s .left		{ left: 20px; }
+.qube_s .right		{ right: 20px; }
+.qube_s .pupil		{ width: 16px; height: 16px; left: 6px; top: 6px; 
+				border-radius: 30px; background: #780026}				
+.qube_s .highlight	{ width: 8px; height: 8px; right: 5px; top: 5px; 
+				border-radius: 30px; background: #fff}	
+
+.qube_s .mouth		{ width: 15px; height: 12px; bottom: 35px; margin: 0 40px;
+				border: 1px solid #333; border-bottom: 2px solid #333; border-top: none; /* border-radius: 0 0 20px 35px; */ border-radius: 100%; }
+
+
+
+
+
+/* greyscale edition */
+.qube_grey .eye { background: #888; }
+.qube_grey .pupil { background: #555; }

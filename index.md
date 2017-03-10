@@ -28,6 +28,9 @@ layout: default
 
 ## Works
 
+#### 2017
+- [jquery.venn.js contribution](https://github.com/sidoh/venn/pull/1)
+
 #### 2016
 
 - [bmsbel+](https://github.com/kuna/bmsbelplus) parser

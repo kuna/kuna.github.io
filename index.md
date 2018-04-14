@@ -20,9 +20,7 @@ layout: default
 * Games, Mostly rhythm games.
   - [iidx](http://iidx.me/kuna)
   - [BMS](http://stairway.sakura.ne.jp/bms/LunaticRave2/?contents=player&page=31478)
-* Drawing - [pixiv](http://pixiv.com/kgdgwn98)
-* Music - [soundcloud](http://soundcloud.com/kgdgwn98)
-* Traveling in Japan
+* Drawing / Music / Traveling
 
 ---
 
@@ -53,6 +51,7 @@ layout: default
 - [LyricsMaster](https://github.com/kuna/LyricsMaster)
 - Code contribution to [django](https://github.com/django/django/pull/5903) / SDL2_image
 - [HTML2Canvas bug reporting](https://github.com/niklasvh/html2canvas/issues/581)
+- [NetCanvas - Drawing through network with multiple people](https://github.com/kuna/netcanvas_croquis)
 
 #### 2013
 

@@ -1,8 +1,13 @@
 # Site settings
 title: '@lazykuna'
 description: 'Bigdata, Programming, Game, Music, Drawing'
-url: '/'
-baseurl: '/'
+
+## URL ##
+# local testing: just empty ''
+# github uploading: use slash '/'
+url: ''
+baseurl: ''
+
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 

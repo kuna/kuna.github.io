@@ -54,3 +54,84 @@ pre.highlight code,
   border: 3px solid #fff;
   border-radius:100%;
 }
+
+/* Timeline */
+.md-blueprint { margin: 0; overflow: hidden; padding: 60px 0 0; }
+.md-blueprint > ul,
+.md-blueprint > ul > li > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+.md-blueprint li > p {
+  margin-bottom: 0;
+}
+
+
+.md-blueprint > ul:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: #afdcf8;
+  left: 25%;
+  margin-left: -10px;
+}
+
+.md-blueprint > ul {
+}
+
+.md-blueprint > ul > li {
+  min-height: 48px;     /* related to circle size */
+  padding-top: 8px;     /* related to circle size */
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.md-blueprint > ul > li > time {
+  color: #6cbfee;
+  font-size: 2.8em;
+  display: block;
+  float: left;
+  width: 17%;
+  text-align: right;
+  position: relative;
+}
+.md-blueprint > ul > li > time:after {
+  content: '';
+  position: absolute;
+  right: -62%;
+  top: 0px;
+  display: blopck;
+  box-shadow: 0 0 0 8px #afdcf8;
+  color: #fff;
+  background: #46a4da;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.md-blueprint > ul > li > ul {
+  float: right;
+  width: 68%;
+}
+
+.md-blueprint > ul > li > ul > li {
+  background: #6cbfee;
+  border-radius: 5px;
+  display: block;
+  line-height: 1.4;
+  font-size: 1.1em;
+  padding: 0.8em;
+  color: #fff;
+  margin: 0 0 15px;
+}
+.md-blueprint > ul > li > ul > li a {
+  color: #ffff9a;
+}
+.md-blueprint > ul > li > ul > li code {
+  background: #666;
+  border-color: #000;
+}

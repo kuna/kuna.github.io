@@ -31,12 +31,18 @@ layout: default
 <div class="md-blueprint" markdown="1">
 * <time>2018</time>
 
-  - (working on it!)
+  - [PAPER: In silico experiment system](https://www.sciencedirect.com/science/article/pii/S104620231830001X) <code>flask,bigdata,cytoscape.js</code>
+    Second Author. Worked with total system pipeline & cytoscape graph modeling, rendering & site design & server managing.
+  - Worked with paper (not published yet)
 
 * <time>2017</time>
 
   - [jquery.venn.js contribution](https://github.com/sidoh/venn/pull/1) <code>js</code>  
     Fixed collision with jquery.bootstrap.js
+  - [SNU Biohealth Lab homepage design](https://biohealth.snu.ac.kr) <code>jekyll,js,css,html</code>  
+    Just... design of previous one was too bad ...
+  - [AI Society homepage manage](https://aisociety.kr) <code>php,js,css,html</code>  
+    Removed Legacy flash and used HTML5 instead, admin of server & DNS.
 
 * <time>2016</time>
 

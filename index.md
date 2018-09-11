@@ -29,9 +29,10 @@ layout: default
 ## Timeline
 
 <div class="md-blueprint" markdown="1">
+
 * <time>2018</time>
 
-  - [PAPER: In silico experiment system](https://www.sciencedirect.com/science/article/pii/S104620231830001X) <code>flask,bigdata,cytoscape.js</code>
+  - [PAPER: In silico experiment system](https://www.sciencedirect.com/science/article/pii/S104620231830001X) <code>flask,bigdata,cytoscape.js</code>  
     Second Author. Worked with total system pipeline & cytoscape graph modeling, rendering & site design & server managing.
   - Worked with paper (not published yet)
 

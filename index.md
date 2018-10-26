@@ -34,7 +34,8 @@ layout: default
 
   - [PAPER: In silico experiment system](https://www.sciencedirect.com/science/article/pii/S104620231830001X) <code>flask,bigdata,cytoscape.js</code>  
     Second Author. Worked with total system pipeline & cytoscape graph modeling, rendering & site design & server managing.
-  - Worked with paper (not published yet)
+  - Identifying stress-related genes and predicting stress types in Arabidopsis using logical correlation layer and CMCL loss through time-series data <code>bigdata,tensorflow</code>
+    First Author. Predicting algorithm with large dimension and small amounts of data.
 
 * <time>2017</time>
 

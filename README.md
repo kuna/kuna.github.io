@@ -1,3 +1,3 @@
 Profile Page
 ============
-see http://kuna.github.com
+see https://kuna.github.io

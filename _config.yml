@@ -1,23 +1,15 @@
 # Site settings
-title: '@lazykuna'
-description: 'Bigdata, Programming, Game, Music, Drawing'
+title: 'Profile of Github@kuna'
+description: ''
 
 ## URL ##
 # local testing: just empty ''
 # github uploading: use slash '/'
-url: ''
-baseurl: ''
+url: '/'
+baseurl: '/'
 
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
-
-author:
-  name: '@lazykuna'
-  email: kgdgwn98@gmail.com
-  twitter_username: lazykuna
-  facebook_username: kgdgwn98
-  github_username:  kuna
-  linkedin_username:  kgdgwn98
 
 defaults:
   -

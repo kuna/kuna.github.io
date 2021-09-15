@@ -1,0 +1,31 @@
+profile:
+    name: Dongwon Kang
+    description: System Programmer, Machine Learning
+    avatar: profile.png
+    #email: 'kgdgwn98@gmail.com'
+    website: blog.insane.pe.kr
+    linkedin: kgdgwn98
+    github: kuna
+    languages: Korean, English, Japanese
+
+technique:
+  - name_ko: 프로그래밍
+    name_en: Programming
+    desc: C/C++, C#, Python, Java, R
+  - name_ko: 개발 환경 자동화 및 가상화
+    name_en: DevOps
+    desc: docker, svn, Github, Jenkins CI/CD
+  - name_ko: 웹 개발
+    name_en: Web Development
+    desc: HTML/JS/CSS, jQuery/bookstrap, django, jekyll, React
+  - name_ko: 게임 개발
+    name_en: Game Development
+    desc: DirectX/OpenGL, GLFW, SDL
+  - name_ko: DB 유지보수 및 최적화
+    name_en: Database maintenance & optimize
+    desc: SQL, PLSQL
+  - name_ko: 안드로이드 어플리케이션 개발
+    name_en: Android Development
+  - name_ko: 빅데이터 및 머신러닝 (바이오데이터)
+    name_en: Bigdata/Machine Learning(BioData)
+    desc: Tensorflow

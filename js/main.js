@@ -14,6 +14,8 @@ $(document).ready(function () {
     }
   })
 
+  /* this class is always appended */
+  /*
   if (window.location.hash && window.location.hash == '#blog') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
@@ -21,6 +23,7 @@ $(document).ready(function () {
   if (window.location.pathname !== '{{ site.baseurl }}' && window.location.pathname !== '{{ site.baseurl }}index.html') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
+  */
 
   $('.btn-mobile-menu').click(function () {
     $('.navigation-wrapper').toggleClass('visible animated bounceInDown')

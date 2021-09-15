@@ -1,0 +1,163 @@
+---
+layout: default
+permalink: /
+---
+
+{% assign content = site.data.data_ko %}
+<div class="content">
+
+  {% assign section = content.experience %}
+  <div class="section">
+    <div class="title">경력</div>
+    {% if section.desc %}
+    <div class="desc">{{ section.desc }}</div>
+    {% endif %}
+    <ol class="post-list">
+      {% for obj in section.data %}
+        <li>
+          <div class="title">
+            <h2 class="post-list__post-title post-title">{{ obj.title }}</h2>
+            {% if obj.excerpt %}
+            <p class="excerpt">&hellip;{{ obj.excerpt }}</p>
+            {% endif %}
+          </div>
+          <div class="post-list__meta"><time class="post-list__meta--date date">{{ obj.time }}</time></div>
+          <div class="text">
+            {{ obj.summary | markdownify }}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+
+  {% assign section = content.education %}
+  <div class="section">
+    <div class="title">학력</div>
+    {% if section.desc %}
+    <div class="desc">{{ section.desc }}</div>
+    {% endif %}
+    <ol class="post-list">
+      {% for obj in section.data %}
+        <li>
+          <div class="title">
+            <h2 class="post-list__post-title post-title">{{ obj.title }}</h2>
+            {% if obj.excerpt %}
+            <p class="excerpt">&hellip;{{ obj.excerpt }}</p>
+            {% endif %}
+          </div>
+          <div class="post-list__meta"><time class="post-list__meta--date date">{{ obj.time }}</time></div>
+          <div class="text">
+            {{ obj.summary | markdownify }}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+
+  {% assign section = content.paper %}
+  <div class="section">
+    <div class="title">논문</div>
+    {% if section.desc %}
+    <div class="desc">{{ section.desc }}</div>
+    {% endif %}
+    <ol class="post-list">
+      {% for obj in section.data %}
+        <li>
+          <div class="title">
+            <h2 class="post-list__post-title post-title">{{ obj.title }}</h2>
+            {% if obj.excerpt %}
+            <p class="excerpt">&hellip;{{ obj.excerpt }}</p>
+            {% endif %}
+          </div>
+          <div class="post-list__meta"><time class="post-list__meta--date date">{{ obj.time }}</time></div>
+          <div class="text">
+            {{ obj.summary | markdownify }}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+
+  {% assign section = content.project %}
+  <div class="section">
+    <div class="title">프로젝트</div>
+    {% if section.desc %}
+    <div class="desc">{{ section.desc }}</div>
+    {% endif %}
+    <ol class="post-list">
+      {% for obj in section.data %}
+        <li>
+          <div class="title">
+            <h2 class="post-list__post-title post-title">{{ obj.title }}</h2>
+            {% if obj.excerpt %}
+            <p class="excerpt">&hellip;{{ obj.excerpt }}</p>
+            {% endif %}
+          </div>
+          <div class="post-list__meta"><time class="post-list__meta--date date">{{ obj.time }}</time></div>
+          <div class="text">
+            {{ obj.summary | markdownify }}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+
+  {% assign section = content.opensource %}
+  <div class="section">
+    <div class="title">오픈소스</div>
+    {% if section.desc %}
+    <div class="desc">{{ section.desc }}</div>
+    {% endif %}
+    <ol class="post-list">
+      {% for obj in section.data %}
+        <li>
+          <div class="title">
+            <h2 class="post-list__post-title post-title">{{ obj.title }}</h2>
+            {% if obj.excerpt %}
+            <p class="excerpt">&hellip;{{ obj.excerpt }}</p>
+            {% endif %}
+          </div>
+          {% if obj.time %}
+          <div class="post-list__meta"><time class="post-list__meta--date date">{{ obj.time }}</time></div>
+          {% endif %}
+          <div class="text">
+            {{ obj.summary | markdownify }}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+
+  {% assign section = content.interest %}
+  <div class="section">
+    <div class="title">관심분야</div>
+    {% if section.desc %}
+    <div class="desc">{{ section.desc }}</div>
+    {% endif %}
+    <ol class="post-list">
+      {% for obj in section.data %}
+        <li>
+          <div class="title">
+            <h2 class="post-list__post-title post-title">{{ obj.title }}</h2>
+            {% if obj.excerpt %}
+            <p class="excerpt">&hellip;{{ obj.excerpt }}</p>
+            {% endif %}
+          </div>
+          <div class="text">
+            {{ obj.summary | markdownify }}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+
+
+  <!--
+  <hr class="post-list__divider ">
+
+  {% if paginator.previous_page or paginator.next_page %}
+      {% include pagination.html %}
+  {% endif %}
+  -->
+
+</div>

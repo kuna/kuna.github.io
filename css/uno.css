@@ -953,7 +953,7 @@ h5,
 h5 {
 	margin-top: .8em;
 	margin-bottom: .4em;
-	font-family: "Roboto Slab", serif;
+	font-family: "Roboto Slab", "맑은 고딕", "Malgun Gothic", "돋움", "Dotum", serif;
 	font-weight: lighter;
 	color: #333333;
 	-webkit-font-smoothing: antialiased; }
@@ -1426,29 +1426,45 @@ i {
 	display: block;
 	position: relative; }
 
+.section { margin-bottom: 80px; }
+
+.section > .title {
+	color: #217fd2;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.section > .desc { font-size: 13px; margin-bottom: 10px; line-height: 1.6em; }
+
 .post-list {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	text-align: left; }
-	.post-list li {
+	.post-list > li {
 		margin: 0 0 2.2em 0; }
-		.post-list li:last-child hr {
+		.post-list > li:last-child hr {
 			display: none; }
+
+.post-list > li > .title { clear: both; overflow: hidden; }
 
 .post-list__post-title {
 	margin-top: 0;
 	margin-bottom: .2em;
 	font-size: 1.5em;
+	font-weight: bold;
+	display: inline-block;
 	line-height: 1.3em; }
 	.post-list__post-title a {
 		color: #333333; }
 		.post-list__post-title a:hover {
 			color: #b9301c; }
 
+.post-list > li > .title > .excerpt { display: inline-block; }
+
 .post-list__meta {
-	display: block;
-	margin: .7em 0 0 0;
+	margin: .2em 0 .7em 0;
 	font-size: .9em;
 	color: #c7c7c7; }
 

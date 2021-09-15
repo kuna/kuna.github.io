@@ -9,8 +9,8 @@
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-        <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
-          <img src="{{ "images/profile.jpg" | prepend: site.baseurl }}" class="user-image" alt="My Profile Photo">
+        <a href="/" title="link to home of {{ site.title }}">
+          <img src="{{ "images/profile.jpg" | relative_url }}" class="user-image" alt="My Profile Photo">
           <!--
           <div class="qube_s">
             <div class="ear left"></div>
@@ -39,8 +39,8 @@
 
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}#blog" title="link to {{ site.title }} blog" class="blog-button">KO</a></li>
-              <li class="navigation__item"><a href="{{ site.baseurl }}en/#blog" title="link to {{ site.title }} blog" class="blog-button">EN</a></li>
+              <li class="navigation__item"><a href="/" title="link to {{ site.title }} blog" class="blog-button">KO</a></li>
+              <li class="navigation__item"><a href="/en/" title="link to {{ site.title }} blog" class="blog-button">EN</a></li>
             </ul>
           </nav>
 

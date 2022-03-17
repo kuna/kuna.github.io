@@ -129,6 +129,7 @@ permalink: /
   </div>
 
   {% assign section = content.interest %}
+  {% if section %}
   <div class="section">
     <div class="title">관심분야</div>
     {% if section.desc %}
@@ -150,6 +151,7 @@ permalink: /
       {% endfor %}
     </ol>
   </div>
+  {% endif %}
 
 
   <!--

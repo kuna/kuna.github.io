@@ -3,7 +3,8 @@ layout: default
 permalink: /en/
 ---
 
-{% assign content = site.data.data_ko %}
+{% assign content = site.data.profile_en %}
+{% assign content_common = site.data.profile %}
 <div class="content">
 
   {% assign section = content.experience %}
@@ -16,11 +17,18 @@ permalink: /en/
       {% for obj in section.data %}
         <li>
           <div class="title">
-            <h2 class="post-list__post-title post-title">{{ obj.title }}</h2>
+            <h2 class="post-list__post-title post-title">{% if obj.image %}<img src="/images/{{obj.image}}">{% endif %}{{ obj.title }}</h2>
             {% if obj.excerpt %}
             <p class="excerpt">&hellip;{{ obj.excerpt }}</p>
             {% endif %}
           </div>
+          {% if obj.tag %}
+          <ol class="tag-list no-margin clear">
+            {% for tag in obj.tag %}
+            <li class="tagbox tagbox-{{tag.tag}}">{{ tag.name }}</li>
+            {% endfor %}
+          </ol>
+          {% endif %}
           <div class="post-list__meta"><time class="post-list__meta--date date">{{ obj.time }}</time></div>
           <div class="text">
             {{ obj.summary | markdownify }}
@@ -40,7 +48,7 @@ permalink: /en/
       {% for obj in section.data %}
         <li>
           <div class="title">
-            <h2 class="post-list__post-title post-title">{{ obj.title }}</h2>
+            <h2 class="post-list__post-title post-title">{% if obj.image %}<img src="/images/{{obj.image}}">{% endif %}{{ obj.title }}</h2>
             {% if obj.excerpt %}
             <p class="excerpt">&hellip;{{ obj.excerpt }}</p>
             {% endif %}
@@ -93,6 +101,13 @@ permalink: /en/
             <p class="excerpt">&hellip;{{ obj.excerpt }}</p>
             {% endif %}
           </div>
+          {% if obj.tag %}
+          <ol class="tag-list no-margin clear">
+            {% for tag in obj.tag %}
+            <li class="tagbox tagbox-{{tag.tag}}">{{ tag.name }}</li>
+            {% endfor %}
+          </ol>
+          {% endif %}
           <div class="post-list__meta"><time class="post-list__meta--date date">{{ obj.time }}</time></div>
           <div class="text">
             {{ obj.summary | markdownify }}
@@ -102,51 +117,41 @@ permalink: /en/
     </ol>
   </div>
 
-  {% assign section = content.opensource %}
+  {% assign section = content_common.opensource %}
   <div class="section">
     <div class="title">Opensource Contribution</div>
     {% if section.desc %}
     <div class="desc">{{ section.desc }}</div>
     {% endif %}
-    <ol class="post-list">
+    <ol class="ticket-list no-margin">
       {% for obj in section.data %}
-        <li>
-          <div class="title">
-            <h2 class="post-list__post-title post-title">{{ obj.title }}</h2>
-            {% if obj.excerpt %}
-            <p class="excerpt">&hellip;{{ obj.excerpt }}</p>
-            {% endif %}
-          </div>
-          {% if obj.time %}
-          <div class="post-list__meta"><time class="post-list__meta--date date">{{ obj.time }}</time></div>
-          {% endif %}
-          <div class="text">
-            {{ obj.summary | markdownify }}
-          </div>
-        </li>
+      <a href="{{ obj.link }}" target="_blank"><li>{{ obj.title }}</li></a>
       {% endfor %}
     </ol>
   </div>
 
-  {% assign section = content.interest %}
+  {% assign section = content_common.lang %}
   <div class="section">
-    <div class="title">Interest</div>
+    <div class="title">Programming language</div>
     {% if section.desc %}
     <div class="desc">{{ section.desc }}</div>
     {% endif %}
-    <ol class="post-list">
+    <ol class="tag-list no-margin">
       {% for obj in section.data %}
-        <li>
-          <div class="title">
-            <h2 class="post-list__post-title post-title">{{ obj.title }}</h2>
-            {% if obj.excerpt %}
-            <p class="excerpt">&hellip;{{ obj.excerpt }}</p>
-            {% endif %}
-          </div>
-          <div class="text">
-            {{ obj.summary | markdownify }}
-          </div>
-        </li>
+      <li class="tagbox tagbox-{{obj.tag}}">{{ obj.title }}</li>
+      {% endfor %}
+    </ol>
+  </div>
+
+  {% assign section = content_common.framework %}
+  <div class="section">
+    <div class="title">Framework & Platform</div>
+    {% if section.desc %}
+    <div class="desc">{{ section.desc }}</div>
+    {% endif %}
+    <ol class="tag-list no-margin">
+      {% for obj in section.data %}
+      <li class="tagbox tagbox-{{obj.tag}}">{{ obj.title }}</li>
       {% endfor %}
     </ol>
   </div>

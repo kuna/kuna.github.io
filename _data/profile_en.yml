@@ -1,0 +1,208 @@
+experience:
+
+  data:
+  - title: Clumio
+    image: clumio.webp
+    tag:
+      - name: Backend
+      - name: Cloud
+    excerpt: Software Engineer
+    time: May 2022 - Now
+    summary: |
+      - Backup service development & maintenance, based on Golang
+      - Develop based on Serverless Architecture (kubernetes, AWS Lambda) and deployment (terraform)
+  - title: TmaxData
+    image: tmax.jpg
+    tag:
+      - name: Backend
+    excerpt: Team Leader
+    time: Dec 2020 - Dec 2021
+    summary: |
+      - Code quality improvement
+        - Study Books: Refactoring 2, Clean code
+        - Code review based on readability, test-coverage.
+      - Work effciency improvement
+        - Wiki documentation
+        - Redesigned category for ease of searching document
+      - Setting goal for team
+        - Checklist for long-term or potential issues.
+      - Education for New-hire
+        - Documentation for New-hire
+        - Provide tutorial
+      - Management
+        - Workload distribution
+        - Grading based on workload, code quality, design availabilty, growth, etc.
+        - Reporting various suggestions for better develop environment and our team
+  - title: TmaxData
+    image: tmax.jpg
+    tag:
+      - name: Backend
+    excerpt: Software Engineer
+    time: Sep 2018 - May 2022
+    summary: |
+      - Parser design & development
+        - Based on Bison/Flex (DDL, PLSQL, SQL Parser)
+        - Custom Parser design to reduce grammar conflict
+      - Reducing DBMS Lock & Cache improvement
+        - Implementing new lock design per partition
+        - Global cache for PL/SQL
+        - Minimizing lock to better performance / removing deadlock.
+      - PL/SQL Package development
+        - Message Queue based on PL/SQL
+        - Debugger based on PL/SQL
+      - PL/SQL engine development
+        - Nested Type
+        - Dblink protocol
+        - PL/SQL VM interpreter optimizing
+        - PL/SQL compiled mode design
+      - Develop addition features for DBMS
+        - Gateway
+        - Job module
+        - DB monitoring process
+      - DevOps
+        - Error check script for compile time (to prevent cost for unrecognized bug at build time)
+        - Framework for unit test
+      - Output
+        - Removed most of the severe bugs of our module.
+        - Contribute to company for developing important features, about 3x Revenue compared to 18y.
+
+education:
+  data:
+  - title: B.S. graduate from Seoul National Univ.
+    image: snu.jpg
+    excerpt: CSE
+    time: Feb 2012 - Aug 2016
+    summary: |
+      - Various side project on Github
+      - Development activity: UPnL
+      - Security activity: Guardian
+      - Some events: SW Maestro, Microsoft App Hackathon 등
+  - title: Software Maestro 3rd member
+    image: swm.jpg
+    excerpt: FKII
+    time: Jul 2012 - Feb 2013
+    summary: |
+      - Streaming platform of individual (Android dev.)
+      - Game controller platform (Android, server, demo game dev.)
+  - title: M.S. graduate from Seoul National Univ.
+    image: snu.jpg
+    excerpt: CSE
+    time: Sep 2016 - Aug 2018
+    summary: |
+      - Analyzing mRNA data
+      - Model design and develop based on Tensorflow
+      - Written 4 Paper (one main author)
+
+
+paper:
+  data:
+  - title: Identifying stress-related genes and predicting stress types in Arabidopsis using logical correlation layer and CMCL loss through time-series data
+    excerpt: BIBM, Main Author
+    time: 2018
+    summary: |
+      - Model development which find out stress label and biomarkers from time-series mRNA.
+      - Used model input as Extracting DEG p-value from Rscript, output as one-hot encoded label
+      - Added group effect for data of small cardinality
+      - Used CMCL loss for Multiple selection
+      - Though small cardinality of learning data set, remarkable output had came out.
+  - title: In silico experiment system
+    excerpt: Methods
+    time: 2018
+    summary: |
+      - In silico experiment in Web
+      - Implementation of analyze pipeline with Flask
+      - Preprocessing: DEG from Rscript
+      - Used cytoscape.js for Graph rendering
+      - Cross validation with real biomarker
+  - title: Venn-diaNet
+    excerpt: BMC
+    time: 2019
+    summary: |
+      Venn-diaNet: venn diagram based network propagation analysis framework for comparing multiple biological experiments
+      - Preprocessing: DEG from Rscript
+      - Developed venn diagram rendering based on cytoscape.js
+        - Usable for N-group
+        - Venn diagram and node element positioning using Edge weight
+        - Performance improvement using threshold for selective rendering.
+  - title: HTRgene
+    excerpt: BMC
+    time: 2019
+    summary: |
+      HTRgene: integrating multiple heterogeneous time-series data to investigate cold and heat stress response signaling genes in Arabidopsis
+      - New DEG Algorithm: Using clustering, find order of biomarker and it's pvalue.
+      - Performance Proof: Compared to other DEG algorithm, HTRGene had found remarkable genes other tools hadn't found with Arabidopsis.
+
+
+project:
+  data:
+  - title: Rhythmus
+    excerpt: C++, OpenGL, GLFW
+    tag:
+      - name: Game
+    time: 2018 ~
+    summary: |
+      - Develop Game Engine by own
+        - For compliance to GPL License
+        - Based on GLFW
+        - Multicore optimized design for resource loading
+        - Dynamic vsync for minimizing input lag
+        - Mixer implementation with Sound effector
+        - Support other game resource (dxa)
+        - Game script runtime (lua, lr2script)
+      - Be-music script library engine
+        - Used googletest
+  - title: bmx2ogg
+    excerpt: C++
+    time: 2016
+    summary: |
+      - Audio decode/encode, mixing development
+        - With pitch / speed change
+      - travis CI for stable release
+  - title: iidx.insane.pe.kr
+    excerpt: python
+    tag:
+      - name: Backend
+      - name: Frontend
+      - name: Web
+    time: 2016 ~
+    summary: |
+      - Game record managing, based on django + ORM
+        - frontend: jQuery + bootstrap
+      - Recommendation service
+        - Measure each record and user based on MCML, and suggestion based on measurement.
+      - Maintenance tool
+        - Automated management via scripts
+        - Data modification tool for easy maintenance
+  - title: iBeatcon for Android
+    excerpt: Android, C#
+    tag:
+      - name: Android
+    time: 2014
+    summary: |
+      - client: Android, server: C#
+  - title: Controller based on Smartphone Sensor
+    excerpt: Android, python
+    tag:
+      - name: Android
+    time: 2014
+    summary: |
+      - server: python, client: Android
+      - Motion recognition using machine learning for high accuracy
+  - title: Rhythmus_java
+    excerpt: Java
+    tag:
+      - name: Game
+    time: 2013
+    summary: |
+      - Based on libGDX engine
+        - High compatibility (Windows, Mac, Android)
+        - Small time/cost for development
+  - title: NovelViewer
+    excerpt: C++, DirectX
+    time: 2012
+    summary: |
+      - Text novel viewer for UMPC
+      - Many features: bookmark, automatically open last closed file, etc.
+      - Smooth pagination animation
+      - Performance optimization: DirectX(GPU) + font cache for better UX
+

@@ -30,6 +30,9 @@
           -->
 
           <h1 class="panel-cover__title panel-title">{{ site.data.profile.profile.name }}</h1>
+          {% if site.data.profile.profile.nickname %}
+          <h2 class="panel-cover__title panel-subtitle">{{ site.data.profile.profile.nickname }}</h2>
+          {% endif %}
         </a>
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">{{ site.data.profile.profile.description }}</p>

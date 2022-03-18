@@ -1,0 +1,46 @@
+---
+layout: default
+permalink: /gateway/
+---
+
+{% assign content = site.data.gateway %}
+<div class="content gateway">
+
+  <div class="section">
+    <img src="/images/gateway.jpg" class="gateway">
+  </div>
+
+  {% assign section = content.service %}
+  <div class="section">
+    <h1>Service</h1>
+    <ol class="ticket-list no-margin">
+    {% for obj in section %}
+      <a href="{{ obj.link }}"><li>{{ obj.name }}</li></a>
+    {% endfor %}
+    </ol>
+  </div>
+
+
+  {% assign section = content.production %}
+  <div class="section">
+    <h1>Production</h1>
+    <ol class="ticket-list no-margin">
+    {% for obj in section %}
+      <a href="{{ obj.link }}" target="_blank"><li>{{ obj.name }}</li></a>
+    {% endfor %}
+    </ol>
+  </div>
+
+
+  {% assign section = content.profile %}
+  <div class="section">
+    <h1>Profile</h1>
+    <ol class="ticket-list no-margin">
+    {% for obj in section %}
+      <a href="{{ obj.link }}"><li>{{ obj.name }}</li></a>
+    {% endfor %}
+    </ol>
+  </div>
+
+
+</div>

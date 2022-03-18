@@ -40,14 +40,16 @@
 
         <div class="navigation-wrapper">
 
+          <!--
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
               <li class="navigation__item"><a href="/" title="link to {{ site.title }} blog" class="blog-button">KO</a></li>
               <li class="navigation__item"><a href="/en/" title="link to {{ site.title }} blog" class="blog-button">EN</a></li>
             </ul>
           </nav>
+          -->
 
-          <nav class="cover-navigation navigation--social">
+          <nav class="cover-navigation navigation--social no-margin">
             <ul class="navigation">
           
             {% if site.data.profile.profile.twitter %}
@@ -86,6 +88,16 @@
                 <a href="https://www.github.com/{{ site.data.profile.profile.github }}" title="{{ site.data.profile.profile.github }} on GitHub" target="_blank">
                   <i class="icon icon-social-github"></i>
                   <span class="label">GitHub</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.data.profile.profile.website %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://{{ site.data.profile.profile.website }}" title="{{ site.data.profile.profile.website }}" target="_blank">
+                  <i class="icon icon-social-blogger"></i>
+                  <span class="label">Website</span>
                 </a>
               </li>
             {% endif %}

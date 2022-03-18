@@ -1,0 +1,22 @@
+service:
+  - name: "iidx.insane.pe.kr"
+    link: "https://iidx.insane.pe.kr"
+production:
+  - name: "rhythmus"
+    link: "https://github.com/rhythmus-emulator/rhythmus"
+    ongoing: true
+  - name: "rhythmus-java"
+    link: "https://github.com/kuna/Rhythmus_java"
+  - name: "bmx2ogg"
+    link: "https://github.com/kuna/bmx2ogg"
+  - name: "NovelViewer"
+    link: "https://github.com/kuna/NovelViewer"
+    depreciated: true
+profile:
+  - name: "ko-KR"
+    link: "/ko/"
+  - name: "en-US"
+    link: "/en/"
+SNS:
+  - name: "Tistory"
+    link: "https://blog.insane.pe.kr"

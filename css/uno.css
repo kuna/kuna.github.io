@@ -1732,3 +1732,7 @@ input[type="tel"] {
 .tagbox-red { background-color: #633; }
 .tagbox-green { background-color: #363; }
 .tagbox-blue { background-color: #336; }
+
+.content h1 { font-size: 1.8em; }
+
+.content .gateway { max-height: 300px; }

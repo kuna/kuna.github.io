@@ -24,15 +24,16 @@ experience:
       - Work effciency improvement
         - Wiki documentation
         - Redesigned category for ease of searching document
-      - Setting goal for team
-        - Checklist for long-term or potential issues.
       - Education for New-hire
         - Documentation for New-hire
         - Provide tutorial
-      - Management
+      - Team Management
         - Workload distribution
+        - Checklist for long-term or potential issues.
         - Grading based on workload, code quality, design availabilty, growth, etc.
-        - Reporting various suggestions for better develop environment and our team
+      - Motivating team member to develop
+        - Assign long term issue which is challenging, also could be one's career.
+        - Higher priority on development and designing than other issues.
   - title: TmaxData
     image: tmax.jpg
     tag:
@@ -61,8 +62,9 @@ experience:
         - Job module
         - DB monitoring process
       - DevOps
-        - Error check script for compile time (to prevent cost for unrecognized bug at build time)
+        - Early error check script on compile time to prevent addition cost.
         - Framework for unit test
+        - Development and distribution in unified environment using Docker
       - Output
         - Removed most of the severe bugs of our module.
         - Contribute to company for developing important features, about 3x Revenue compared to 18y.

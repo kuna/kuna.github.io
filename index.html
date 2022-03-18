@@ -12,7 +12,7 @@ layout: default
   {% assign section = content.service %}
   <div class="section">
     <h1>Service</h1>
-    <ol class="ticket-list no-margin">
+    <ol class="ticket-list no-margin clear">
     {% for obj in section %}
       <a href="{{ obj.link }}"><li>{{ obj.name }}</li></a>
     {% endfor %}
@@ -23,7 +23,7 @@ layout: default
   {% assign section = content.production %}
   <div class="section">
     <h1>Production</h1>
-    <ol class="ticket-list no-margin">
+    <ol class="ticket-list no-margin clear">
     {% for obj in section %}
       <a href="{{ obj.link }}" target="_blank"><li>{{ obj.name }}</li></a>
     {% endfor %}
@@ -34,7 +34,7 @@ layout: default
   {% assign section = content.profile %}
   <div class="section">
     <h1>Profile</h1>
-    <ol class="ticket-list no-margin">
+    <ol class="ticket-list no-margin clear">
     {% for obj in section %}
       <a href="{{ obj.link }}"><li>{{ obj.name }}</li></a>
     {% endfor %}

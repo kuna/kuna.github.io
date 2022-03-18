@@ -2,12 +2,19 @@ experience:
 
   data:
   - title: Clumio
+    image: clumio.webp
+    tag:
+      - name: Backend
+      - name: Cloud
     excerpt: Software Engineer
     time: 2022년 3월 - 현재
     summary: |
       - Golang 기반 백업 서비스 개발 및 유지보수
       - Serverless 아키텍처 기반 개발(kubernetes, AWS Lambda) 및 배포(terraform)
   - title: TmaxData
+    image: tmax.jpg
+    tag:
+      - name: Backend
     excerpt: Team Leader (겸직)
     time: 2020년 12월 - 2021년 12월
     summary: |
@@ -24,6 +31,9 @@ experience:
         - 빠른 실무투입을 위한 신입용 문서 정리 및 tutorial 도입
       - 팀 내 일감 분배 및 보고 수행
   - title: TmaxData
+    image: tmax.jpg
+    tag:
+      - name: Backend
     excerpt: Software Engineer
     time: 2018년 9월 - 2022년 3월
     summary: |
@@ -56,6 +66,7 @@ experience:
 education:
   data:
   - title: 서울대학교 학사 졸업
+    image: snu.jpg
     excerpt: 컴퓨터공학부
     time: 2012년 2월 - 2016년 8월
     summary: |
@@ -64,12 +75,14 @@ education:
       - 보안 동아리 활동: Guardian
       - 행사 참여: SW Maestro, Microsoft App Hackathon 등
   - title: Software Maestro 3기 수료
+    image: swm.jpg
     excerpt: 한국정보산업연합
     time: 2012년 7월 - 2013년 2월
     summary: |
       - 개인 방송 솔루션 설계 및 Android 앱 개발
       - 게임 컨트롤러 플랫폼 설계 및 Android, server, 데모 게임 개발
   - title: 서울대학교 석사 졸업
+    image: snu.jpg
     excerpt: 컴퓨터공학부 생명정보공학 연구소
     time: 2016년 9월 - 2018년 8월
     summary: |
@@ -122,17 +135,33 @@ project:
   data:
   - title: Rhythmus
     excerpt: C++, OpenGL, GLFW
+    tag:
+      - name: Game
     time: 2018 ~
     summary: |
       - Game Engine 자체구현
+        - GPL License 기반 open source 목표를 달성하기 위해 직접 개발
         - GLFW 프레임워크 기반
         - Multicore에 최적화된 resource manager 개발
+        - 성능 효율성과 lag를 최소화를 위해 동적 vsync 적용
         - Sound effector 기능이 들어간 Mixer 자체구현
         - 리버싱을 통한 타 게임 리소스 지원 (dxa)
         - Game script runtime 설계 및 구현 (lua, lr2script)
       - Be-music script library 개발
+        - googletest 도입으로 품질 안정화
+  - title: bmx2ogg
+    excerpt: C++
+    time: 2016
+    summary: |
+      - C++로 직접 audio decode/encode, mixing 모듈 개발
+        - pitch / speed change 개발
+      - travis CI 도입을 통한 품질 안정화
   - title: iidx.insane.pe.kr
     excerpt: python
+    tag:
+      - name: Backend
+      - name: Frontend
+      - name: Web
     time: 2016 ~
     summary: |
       - django + ORM 기반의 게임 데이터 관리 사이트
@@ -144,17 +173,30 @@ project:
         - 데이터 수정 툴 개발을 통해 쉬운 유지보수
   - title: iBeatcon for Android
     excerpt: Android, C#
+    tag:
+      - name: Android
     time: 2014
     summary: |
       - client: Android, server: C#
       - 모바일기기를 게임 컨트롤러처럼 쓸 수 있도록 하는 애플리케이션입니다.
   - title: Controller based on Smartphone Sensor
     excerpt: Android, python
+    tag:
+      - name: Android
     time: 2014
     summary: |
       - 스마트폰의 센서를 이용하여 범용적인 컨트롤러로 사용할 수 있도록 하는 솔루션
       - server: python, client: Android
       - 머신 러닝을 통헤 보다 정확도 높은 모션 인식을 구현
+  - title: Rhythmus_java
+    excerpt: Java
+    tag:
+      - name: Game
+    time: 2013
+    summary: |
+      - libGDX 엔진 기반
+        - 높은 호환성 자랑 (Windows, Mac, Android)
+        - 빠른 개발 진행
   - title: NovelViewer
     excerpt: C++, DirectX
     time: 2012
@@ -163,67 +205,4 @@ project:
       - 편리한 UX 제공: 북마크, 다음 파일로 이동, 최근 파일 자동 열림 등 구현
       - 부드러운 페이지 넘김을 구현하였습니다.
       - 쾌적한 사용자 경험을 위해 DirectX + font cache를 이용, 저사양 최적화를 하였습니다.
-
-
-# opensource contribution
-opensource:
-  data:
-  - title: jQuery.venn#1
-    link: https://github.com/sidoh/venn/pull/1
-    excerpt: jquery
-    summary: |
-      venn diagram 그리는 확장 기능이 다른 기능(jquery.bootstrap.js)와 충돌하는 문제점이 있어 이를 수정하였습니다.
-  - title: django#25878
-    link: https://code.djangoproject.com/ticket/25878
-    excerpt: django
-    summary: Debug 모드에서 static url이 잘못 설정되는 문제를 수정하였습니다.
-  - title: SDL2_Fontcache#6
-    link: https://github.com/grimfang4/SDL_FontCache/pull/6
-  - title: SDL2_image@156d34df
-    link: https://hg.libsdl.org/SDL_image/rev/fd7214657669
-    excerpt: C++
-    summary: SDL2_image 라이브러리에서 특정 포멧의 이미지를 읽어들일 때 crash가 일어날 수 있음을 확인하고 수정하였습니다.
-
-
-lang:
-  data:
-  - title: Go
-    tag: red
-  - title: Python
-    tag: normal
-  - title: C/C++
-    tag: red
-  - title: Java
-    tag: red
-  - title: Rust
-    tag: normal
-  - title: Javascript
-    tag: red
-  - title: CSS
-    tag: red
-  - title: R
-    tag: normal
-  - title: PL/SQL
-    tag: red
-  - title: shell
-    tag: red
-
-framework:
-  data:
-  - title: django
-  - title: bootstrap
-  - title: jquery
-  - title: SDL2
-  - title: OpenGL
-  - title: Tensorflow
-  - title: GLFW
-  - title: Flex/Bison
-  - title: RDB
-  - title: NoSQL
-  - title: Android
-  - title: Linux
-  - title: terraform
-  - title: AWS
-  - title: Docker
-  - title: kubernetes
 

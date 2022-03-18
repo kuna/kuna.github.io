@@ -9,24 +9,57 @@ profile:
     github: kuna
     languages: Korean, English, Japanese
 
-technique:
-  - name_ko: 프로그래밍
-    name_en: Programming
-    desc: C/C++, C#, Python, Java, R
-  - name_ko: 개발 환경 자동화 및 가상화
-    name_en: DevOps
-    desc: docker, svn, Github, Jenkins CI/CD
-  - name_ko: 웹 개발
-    name_en: Web Development
-    desc: HTML/JS/CSS, jQuery/bookstrap, django, jekyll, React
-  - name_ko: 게임 개발
-    name_en: Game Development
-    desc: DirectX/OpenGL, GLFW, SDL
-  - name_ko: DB 유지보수 및 최적화
-    name_en: Database maintenance & optimize
-    desc: SQL, PLSQL
-  - name_ko: 안드로이드 어플리케이션 개발
-    name_en: Android Development
-  - name_ko: 빅데이터 및 머신러닝 (바이오데이터)
-    name_en: Bigdata/Machine Learning(BioData)
-    desc: Tensorflow
+# opensource contribution
+opensource:
+  data:
+  - title: jQuery.venn#1
+    link: https://github.com/sidoh/venn/pull/1
+  - title: django#25878
+    link: https://code.djangoproject.com/ticket/25878
+  - title: SDL2_Fontcache#6
+    link: https://github.com/grimfang4/SDL_FontCache/pull/6
+  - title: SDL2_image@156d34df
+    link: https://hg.libsdl.org/SDL_image/rev/fd7214657669
+
+lang:
+  data:
+  - title: Go
+    tag: red
+  - title: Python
+    tag: normal
+  - title: C/C++
+    tag: red
+  - title: Java
+    tag: red
+  - title: Rust
+    tag: normal
+  - title: Javascript
+    tag: red
+  - title: CSS
+    tag: red
+  - title: R
+    tag: normal
+  - title: PL/SQL
+    tag: red
+  - title: shell
+    tag: red
+
+framework:
+  data:
+  - title: django
+  - title: bootstrap
+  - title: jquery
+  - title: SDL2
+  - title: OpenGL
+  - title: Tensorflow
+  - title: GLFW
+  - title: Flex/Bison
+  - title: RDB
+  - title: NoSQL
+  - title: Android
+  - title: Linux
+  - title: terraform
+  - title: AWS
+  - title: Docker
+  - title: kubernetes
+

@@ -945,6 +945,9 @@ a {
 		-moz-transition: .5s;
 		-webkit-transition: .5s; }
 
+.content a { color: #4094b2; }
+.content a:hover { color: #1c60b9; }
+
 h1,
 h2,
 h3,
@@ -1697,3 +1700,24 @@ input[type="tel"] {
 	.btn, .navigation__item a {
 		display: block;
 		margin-bottom: .4em; } }
+
+/* below is my customs */
+
+.no-margin { margin: 0; }
+.ticket-list li { float:left; padding: 0 20px 0 0; display: block; }
+.tagbox {
+  padding: 5px 8px;
+  margin: 0 10px 6px 0;
+  display: block;
+  float: left;
+  color: #fff;
+  background-color: #333;
+  border-radius: 0.5em;
+  border: none;
+  font: 0.8em Arial bold;
+  cursor: default;
+}
+
+.tagbox-red { background-color: #633; }
+.tagbox-green { background-color: #363; }
+.tagbox-blue { background-color: #336; }

@@ -19,6 +19,9 @@ experience:
         - 불필요한 회의 최소화하고 보고 방식 구체화
       - 팀의 방향성 재정립
         - 기술 부채 관리를 통해 장기/잠재적 이슈들 관리
+      - 신입 교육
+        - 이론적 내용 교육
+        - 빠른 실무투입을 위한 신입용 문서 정리 및 tutorial 도입
       - 팀 내 일감 분배 및 보고 수행
   - title: TmaxData
     excerpt: Software Engineer
@@ -77,99 +80,135 @@ education:
 
 paper:
   data:
-  - title: CMCL loss 및 logical correlation layer 모델을 사용하여 microarray 발현 데이터와 time-based 레이블 데이터 학습
+  - title: Identifying stress-related genes and predicting stress types in Arabidopsis using logical correlation layer and CMCL loss through time-series data
     excerpt: BIBM, Main Author
     time: 2018
     summary: |
-      Identifying stress-related genes and predicting stress types in Arabidopsis using logical correlation layer and CMCL loss through time-series data
-
-      적은 수의 고차원의 time series mRNA 데이터로부터 해당 개체의 label을 알아낼 수 있으면서, 동시에 biomarker을 찾아낼 수 있는 모델을 만들었습니다. 모델은 1차적으로 DEG 를 계산하여 p-value를 feature matrix로 가공시킨 후에, 이를 logical correlation layer을 거치게 하여 vector 값을 나오도록 합니다. 이 vector 값에 들어있는 feature들을 통해 label이 나오도록 하는데, 이 때 overfitting 되는 것을 방지하기 위해 CMCL loss 모델을 이용하였습니다.
-  - title: microarray 데이터를 통한 가상 실험 시스템 구축
+      - 적은 수의 고차원 time series mRNA 데이터로부터 해당 개체의 label을 알아낼 수 있으면서, 동시에 biomarker을 찾아낼 수 있는 모델 개발 및 검증.
+      - Rscript의 DEG 패키지를 이용하여 p-value를 검출하고(preprocess), 이를 모델의 input으로 함. output은 one-hot encoded label으로 설정.
+      - 적은 데이터로 인해 발생하는 overfitting을 방지하기 위해, Group effect를 추가 고려
+      - Multiple selection이 될 경우를 고려하여 CMCL Loss (KL Divergence) 사용
+      - 변수에 비해 데이터가 굉장히 적고, time 정보를 살릴 수 없었던 점이 아쉬웠던 점.
+  - title: In silico experiment system
     excerpt: Methods
     time: 2018
     summary: |
-      In silico experiment system
-
-      DEG 정보를 이용하여, feature을(biomarker set) 지정하면 이와 연관있는 biomarker들을 Cytoscape 라이브러리를 이용하여 직관적인 그래프로 표시해주는 시스템을 개발하고 검증하였습니다.
+      - 웹에서의 In silico experiment를 위한 설계 수행
+      - Flask로 분석 파이프라인 구현
+      - Rscript 이용하여 microarray data를 DEG p-value로 preprocessing
+      - Graph rendering을 위해 cytoscape.js 라이브러리 사용
+      - 실제 biomarker과 cross validation 수행
   - title: Venn-diaNet
     excerpt: BMC
     time: 2019
     summary: |
       Venn-diaNet: venn diagram based network propagation analysis framework for comparing multiple biological experiments
-      
-      Biological experiment에 나온 DEG 정보를 기반으로, 여러 실험들에게서 보이는 common set에 해당되는 gene을 직관적인 multi-set venn diagram으로 보여주는 솔루션을 개발하고 검증하였습니다.
+      - Rscript 이용하여 DEG p-value 검출
+      - cytoscape.js를 이용하여 venn diagram rendering 개발
+        - N-group에서 사용 가능하도록 설계
+        - Edge weight를 이용하여 node들의 positioning을 설정하고, 이에 따라 venn diagram이 구성됨
+        - threshold를 이용한 선택적 rendering으로 성능 최적화
+      - venn diagram의 geneset들의 유효성 검증
   - title: HTRgene
     excerpt: BMC
     time: 2019
     summary: |
       HTRgene: integrating multiple heterogeneous time-series data to investigate cold and heat stress response signaling genes in Arabidopsis
-      
-      기존 DEG 판별 방식에 response point 별로 clustering을 통하여 정확도 및 biomarker 발현의 순서를 확인하는 새로운 알고리즘을 제시하고, 이를 Arabidopsis의 cold/heat stress data를 통하여 유의미한 biomarker이 확인되는지를 통하여 검증하였습니다.
+      - DEG 알고리즘 개발: response point 별로 clustering을 통하여 정확도 및 biomarker 발현의 순서를 확인
+      - 알고리즘 성능 검증: Arabidopsis의 cold/heat stress data를 통하여 유의미한 biomarker 검출 확인, 타 DEG 알고리즘과 비교
 
 
 project:
-  desc: 관심 있는 분야 및 공부하고 싶은 부분에 대하여 개인 프로젝트 개발을 진행하곤 합니다.
   data:
   - title: Rhythmus
     excerpt: C++, OpenGL, GLFW
     time: 2018 ~
     summary: |
-      Lunatic Rave 게임을 역분석하여 해당 게임을 시뮬레이팅하는 게임 엔진을 만들었습니다.
-      단순 기능 구현뿐만 아니라, 기존 게임이 가지고 있던 성능상의 문제를 해결하기 위해 멀티스레딩 및 동시성 문제 해결을 위한 설계를 추가 수행하였으며,
-      게임 스크립트를 읽어들여 실행할 수 있도록 게임 엔진부터 직접 설계 및 구현하였습니다.
+      - Game Engine 자체구현
+        - GLFW 프레임워크 기반
+        - Multicore에 최적화된 resource manager 개발
+        - Sound effector 기능이 들어간 Mixer 자체구현
+        - 리버싱을 통한 타 게임 리소스 지원 (dxa)
+        - Game script runtime 설계 및 구현 (lua, lr2script)
+      - Be-music script library 개발
   - title: iidx.insane.pe.kr
     excerpt: python
     time: 2016 ~
     summary: |
-      Django 프레임워크를 이용하여 만든 게임 데이터 기록 사이트입니다.
-      해당 데이터를 이용하여 sigmoid 모델에 fitting 하여 난이도 수치화 작업을 수행하기도 하였습니다.
+      - django + ORM 기반의 게임 데이터 관리 사이트
+        - frontend: jQuery + bootstrap
+      - 추천 서비스 개발
+        - MCML을 통하여 각 유저와 곡 수치를 산출하고, 이에 따른 추천 서비스 제공
+      - maintenance 툴 개발
+        - management 자동화를 위한 script 개발 및 유지보수
+        - 데이터 수정 툴 개발을 통해 쉬운 유지보수
   - title: iBeatcon for Android
     excerpt: Android, C#
     time: 2014
     summary: |
-      모바일기기를 게임 컨트롤러처럼 쓸 수 있도록 하는 애플리케이션입니다. 호스트 프로그램과 안드로이드 앱을 소켓 통신하여 신호를 전달받을 수 있게 하였습니다.
+      - client: Android, server: C#
+      - 모바일기기를 게임 컨트롤러처럼 쓸 수 있도록 하는 애플리케이션입니다.
   - title: Controller based on Smartphone Sensor
-    excerpt: Android, python, Machine Learning
+    excerpt: Android, python
     time: 2014
     summary: |
-      스마트폰의 센서를 이용하여 범용적인 컨트롤러로 사용할 수 있도록 하는 솔루션을 개발하였습니다.
-      스마트폰 센서 값 날것의 노이즈를 제거하기 위한 머신 러닝을 수행하여 정확도를 높였으며, 게임을 통해 해당 솔루션을 실제 사용하는 모습을 시연하였습니다.
-    
-      
+      - 스마트폰의 센서를 이용하여 범용적인 컨트롤러로 사용할 수 있도록 하는 솔루션
+      - server: python, client: Android
+      - 머신 러닝을 통헤 보다 정확도 높은 모션 인식을 구현
+  - title: NovelViewer
+    excerpt: C++, DirectX
+    time: 2012
+    summary: |
+      - UMPC에서 text 소설을 볼 수 있도록 하는 프로그램입니다.
+      - 편리한 UX 제공: 북마크, 다음 파일로 이동, 최근 파일 자동 열림 등 구현
+      - 부드러운 페이지 넘김을 구현하였습니다.
+      - 쾌적한 사용자 경험을 위해 DirectX + font cache를 이용, 저사양 최적화를 하였습니다.
+
+
+# opensource contribution
 opensource:
   data:
-  - title: "jquery.venn.js contribution"
+  - title: jQuery.venn#1
+    link: https://github.com/sidoh/venn/pull/1
     excerpt: jquery
     summary: |
       venn diagram 그리는 확장 기능이 다른 기능(jquery.bootstrap.js)와 충돌하는 문제점이 있어 이를 수정하였습니다.
-  - title: django static url error
+  - title: django#25878
+    link: https://code.djangoproject.com/ticket/25878
     excerpt: django
     summary: Debug 모드에서 static url이 잘못 설정되는 문제를 수정하였습니다.
-  - title: SDL2_image crashing report
+  - title: SDL2_Fontcache#6
+    link: https://github.com/grimfang4/SDL_FontCache/pull/6
+  - title: SDL2_image@156d34df
+    link: https://hg.libsdl.org/SDL_image/rev/fd7214657669
     excerpt: C++
     summary: SDL2_image 라이브러리에서 특정 포멧의 이미지를 읽어들일 때 crash가 일어날 수 있음을 확인하고 수정하였습니다.
 
 
-skills:
+lang:
   data:
   - title: Go
-    status: strong
+    tag: red
   - title: Python
-    status: normal
+    tag: normal
   - title: C/C++
-    status: strong
+    tag: red
   - title: Java
-    status: strong
+    tag: red
   - title: Rust
-    status: normal
+    tag: normal
   - title: Javascript
-    status: strong
+    tag: red
   - title: CSS
-    status: strong
+    tag: red
   - title: R
-    status: normal
+    tag: normal
+  - title: PL/SQL
+    tag: red
+  - title: shell
+    tag: red
 
-frameworks:
+framework:
   data:
   - title: django
   - title: bootstrap
@@ -179,3 +218,12 @@ frameworks:
   - title: Tensorflow
   - title: GLFW
   - title: Flex/Bison
+  - title: RDB
+  - title: NoSQL
+  - title: Android
+  - title: Linux
+  - title: terraform
+  - title: AWS
+  - title: Docker
+  - title: kubernetes
+

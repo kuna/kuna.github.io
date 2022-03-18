@@ -123,7 +123,7 @@ permalink: /ko/
     {% if section.desc %}
     <div class="desc">{{ section.desc }}</div>
     {% endif %}
-    <ol class="ticket-list no-margin">
+    <ol class="ticket-list no-margin clear">
       {% for obj in section.data %}
       <a href="{{ obj.link }}" target="_blank"><li>{{ obj.title }}</li></a>
       {% endfor %}
@@ -136,7 +136,7 @@ permalink: /ko/
     {% if section.desc %}
     <div class="desc">{{ section.desc }}</div>
     {% endif %}
-    <ol class="tag-list no-margin">
+    <ol class="tag-list no-margin clear">
       {% for obj in section.data %}
       <li class="tagbox tagbox-{{obj.tag}}">{{ obj.title }}</li>
       {% endfor %}
@@ -149,7 +149,7 @@ permalink: /ko/
     {% if section.desc %}
     <div class="desc">{{ section.desc }}</div>
     {% endif %}
-    <ol class="tag-list no-margin">
+    <ol class="tag-list no-margin clear">
       {% for obj in section.data %}
       <li class="tagbox tagbox-{{obj.tag}}">{{ obj.title }}</li>
       {% endfor %}

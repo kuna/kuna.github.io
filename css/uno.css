@@ -1735,4 +1735,4 @@ input[type="tel"] {
 
 .content h1 { font-size: 1.8em; }
 
-.content .gateway { max-height: 300px; }
+.content .gateway { max-height: 300px; max-width: 100%; }

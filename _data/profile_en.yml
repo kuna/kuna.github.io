@@ -40,6 +40,7 @@ experience:
     excerpt: Software Engineer
     time: Sep 2018 - May 2022
     summary: |
+      RDBMS engine develop & maintenance
       - Parser design & development
         - Based on Bison/Flex (DDL, PLSQL, SQL Parser)
         - Custom Parser design to reduce grammar conflict

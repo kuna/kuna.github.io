@@ -37,6 +37,7 @@ experience:
     excerpt: Software Engineer
     time: 2018년 9월 - 2022년 3월
     summary: |
+      RDBMS 엔진 개발 및 유지보수
       - Parser 설계 및 개발
         - Bison/Flex 기반 Parser 유지보수 (DDL, PLSQL, SQL Parser)
         - Conflict 없는 Custom Parser의 설계

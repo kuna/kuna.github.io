@@ -49,9 +49,6 @@ experience:
         - Implementing new lock design per partition
         - Global cache for PL/SQL
         - Minimizing lock to better performance / removing deadlock.
-      - PL/SQL Package development
-        - Message Queue based on PL/SQL
-        - Debugger based on PL/SQL
       - PL/SQL engine development
         - Nested Type
         - Dblink protocol
@@ -61,6 +58,9 @@ experience:
         - Gateway
         - Job module
         - DB monitoring process
+        - PL/SQL Package development
+          - Message Queue based on PL/SQL
+          - Debugger based on PL/SQL
       - DevOps
         - Early error check script on compile time to prevent addition cost.
         - Framework for unit test

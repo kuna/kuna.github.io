@@ -12,6 +12,8 @@ profile:
 # opensource contribution
 opensource:
   data:
+  - title: gdbgui#292
+    link: https://github.com/cs01/gdbgui/issues/292
   - title: jQuery.venn#1
     link: https://github.com/sidoh/venn/pull/1
   - title: django#25878

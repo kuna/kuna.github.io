@@ -148,6 +148,7 @@ project:
         - For compliance to GPL License
         - Based on GLFW
         - Multicore optimized design for resource loading
+          - Develop resource scheduler using worker/task queue
         - Dynamic vsync for minimizing input lag
         - Mixer implementation with Sound effector
         - Support other game resource (dxa)

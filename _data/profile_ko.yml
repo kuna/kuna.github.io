@@ -149,6 +149,7 @@ project:
         - GPL License 기반 open source 목표를 달성하기 위해 직접 개발
         - GLFW 프레임워크 기반
         - Multicore에 최적화된 resource manager 개발
+          - Worker/Task queue 사용하여 자체 리소스 스케쥴러 개발
         - 성능 효율성과 lag를 최소화를 위해 동적 vsync 적용
         - Sound effector 기능이 들어간 Mixer 자체구현
         - 리버싱을 통한 타 게임 리소스 지원 (dxa)

@@ -1,5 +1,11 @@
-experience:
+introduction:
+  desc: |
+    - Loves software engineering.
+    - No field-limited: Web application / System software / Game / Data engineer
+    - Highly value code quality, documentation, automation
+    - Interested in recent-tech and challenging problems.
 
+experience:
   data:
   - title: Clumio
     image: clumio.webp

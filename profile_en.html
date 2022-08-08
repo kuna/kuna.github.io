@@ -7,6 +7,14 @@ permalink: /en/
 {% assign content_common = site.data.profile %}
 <div class="content">
 
+  {% assign section = content.introduction %}
+  {% if section %}
+  <div class="section">
+    <div class="title">I am ...</div>
+    <div class="desc">{{ section.desc | markdownify }}</div>
+  </div>
+  {% endif %}
+
   {% assign section = content.experience %}
   <div class="section">
     <div class="title">Experience</div>

@@ -1,5 +1,11 @@
-experience:
+introduction:
+  desc: |
+    - 개발을 사랑합니다.
+    - Web application / System software / Game / Data engineer 등 분야를 가리지 않습니다.
+    - 코드 퀄러티, 문서화, 자동화를 중요하게 생각합니다.
+    - 최신 기술과 Challenging problem에 관심이 많습니다.
 
+experience:
   data:
   - title: Clumio
     image: clumio.webp

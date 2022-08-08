@@ -9,8 +9,36 @@ experience:
     excerpt: Software Engineer
     time: 2022년 3월 - 현재
     summary: |
-      - Golang 기반 백업 서비스 개발 및 유지보수
       - Serverless 아키텍처 기반 개발(kubernetes, AWS Lambda) 및 배포(terraform)
+      - Golang 기반 백업 기능 개발 및 유지보수
+        - 서비스 기능 추가 및 개선
+        - 코드 퀄러티 중점 개발: Test Coverage 향상, 리팩토링, Peer review
+        - 문서화 수행
+      - 대규모 스케쥴러 개발
+        - 요구사항에 맞도록 2~3 Billion가량의 작업 스케쥴링
+      - MSA에서의 모니터링 및 추적 툴 개발
+  - title: aipets
+    image: aipets.png
+    tag:
+      - name: Backend
+      - name: Cloud
+      - name: Infra
+    excerpt: Software Engineer and Manager
+    time: 2022년 7월 - 현재
+    summary: |
+      Side project로 멘토링 참여중
+      - Terraform + AWS 기반 인프라 구성
+        - 확장 및 모니터링 가능하도록 설계 진행
+        - CW + ECS + ElasticCache + MySQL + MongoDB + SQS 기술 스택 사용
+      - 백엔드 서비스 설계 및 개발
+        - Node.js + Go + protobuf 기반 마이크로서비스 설계 및 개발
+        - 유저 서비스 및 위치 트래킹 & 공유 서비스 개발
+      - CI/CD
+        - Github Actions를 통한 QA automation 및 deployment pipeline
+      - Management
+        - 개발 진행에 있어서 서로 blocking 되지 않도록 하는 데 중점
+        - Blocking 되지 않도록 짧게 자주 sprint / meeting 진행
+        - 설계 및 개발사항 문서화 및 참여 독려
   - title: TmaxData
     image: tmax.jpg
     tag:
@@ -18,22 +46,17 @@ experience:
     excerpt: Team Leader (겸직)
     time: 2020년 12월 - 2021년 12월
     summary: |
-      - 기술 공부 및 팀 업무에 도입
-        - 코드 퀄러티 향상: 리팩토링 2, 클린 코드 등
-        - 가독성 및 테스트 커버리지에 중점으로 코드 리뷰
-      - 업무 효율성 개선
-        - 문서화 되지 않은 내용들의 문서화
-        - 문서 갱신을 통해 필요한 정보를 쉽게 찾을 수 있도록 함
-      - 신입 교육
-        - 이론적 내용 교육
-        - 빠른 실무투입을 위한 신입용 문서 정리 및 tutorial 도입
-      - 팀 관리 업무
-        - 팀 내 일감 분배 및 보고
+      - 이슈 관리
+        - Blocking 요소가 없도록 주기적인 미팅 진행
         - 기술 부채 관리를 통해 장기/잠재적 이슈들 관리
-        - 정량적 요소뿐만 아니라 역량을 고려하여 팀원 평가
-      - 팀 개발 분위기 조성
-        - 본인 커리어에 도움이 될 수 있을만한 롱텀 이슈 분배 및 관리
-        - 개발 및 설계 위주로 최대한 업무 구성
+      - 개개인의 역량 향상
+        - 주기적인 스터디 진행: 리팩토링 2, 클린 코드 등
+      - 개발 문화 개선
+        - 코드리뷰: 가독성 및 테스트 커버리지 향상
+        - 문서화 적극 독려
+      - 업무 효율성 개선
+        - 불필요한 미팅 및 이슈 감축
+        - 빠른 실무투입을 위한 신입용 문서 정리 및 tutorial 도입
   - title: TmaxData
     image: tmax.jpg
     tag:
@@ -41,29 +64,32 @@ experience:
     excerpt: Software Engineer
     time: 2018년 9월 - 2022년 3월
     summary: |
-      RDBMS 엔진 개발 및 유지보수
-      - Parser 설계 및 개발
-        - Bison/Flex 기반 Parser 유지보수 (DDL, PLSQL, SQL Parser)
-        - Conflict 없는 Custom Parser의 설계
-      - DBMS Lock 경합 감소와 Cache 구조 개선
-        - Partition 단위의 Lock 설계 및 구현
-        - Global 단위의 PL/SQL 캐시 설계 및 구현
-        - Lock 구간 최소화를 통한 Deadlock 제거
-      - PL/SQL Engine 설계 및 개발
-        - Nested Type 개발
-        - PL/SQL 관련 dblink 프로토콜 설계 및 개발
-        - PL/SQL VM interpreter 최적화를 위한 stack 설계
-        - PL/SQL Compiled mode 설계
-      - DBMS 부가 기능 개발
-        - Gateway 개발
-        - Job 모듈 유지보수
-        - DB monitoring process 개발
+      C/C++ 기반 RDBMS 엔진 개발 및 유지보수
+      - 성능 개선
+        - DBMS Lock 최소화
+        - Cache 구조 개선 (Partition 및 global cache 추가 및 구현)
+      - 기능 개발
+        - PL/SQL Engine 설계 및 개발
+          - Nested Type 개발
+          - dblink 프로토콜 설계 및 개발
+          - PL/SQL VM interpreter 최적화 (stack 설계 등)
+          - PL/SQL Compiled mode 설계
+        - Parser 설계 및 개발
+          - Bison/Flex 기반 Parser 유지보수 (DDL, PLSQL, SQL Parser)
+          - Conflict 없는 Custom Parser의 설계
         - PL/SQL 패키지 설계 및 개발
           - PL/SQL 기반 Message Queue 패키지 설계
           - PL/SQL debugger 기능 설계 및 개발
-      - DevOps
-        - 오류 조기 검출: Compile time에 오류 검출을 위한 스크립트 추가
+        - Gateway 개발
+        - Job 모듈 유지보수
+        - DB monitoring process 개발
+      - 테스트 개선
+        - 오류 조기 검출: CI pipeline에 validation script 추가
         - 유닛 테스트 도입
+      - 개발 환경 및 문화 개선
+        - 타 팀원들의 코드 리뷰 수행
+        - 문서화 독려
+        - 테스트 케이스 추가 및 커버리지 향상 독려
         - Docker을 이용한 통일된 환경에서의 개발 및 배포
       - 성과
         - 담당했던 모듈의 중대 버그 모두 제거
@@ -92,8 +118,8 @@ education:
     excerpt: 컴퓨터공학부 생명정보공학 연구소
     time: 2016년 9월 - 2018년 8월
     summary: |
-      - mRNA 데이터 분석 방법 연구
-      - Tensorflow 기반으로 모델 설계 및 개발
+      - 생명 데이터 (mRNA) 분석 및 툴 개발
+      - Tensorflow 기반 모델 설계 및 개발
       - 4편의 논문 작성 (메인 저자 1편)
 
 
@@ -103,20 +129,19 @@ paper:
     excerpt: BIBM, Main Author
     time: 2018
     summary: |
-      - 적은 수의 고차원 time series mRNA 데이터로부터 해당 개체의 label을 알아낼 수 있으면서, 동시에 biomarker을 찾아낼 수 있는 모델 개발 및 검증.
-      - Rscript의 DEG 패키지를 이용하여 p-value를 검출하고(preprocess), 이를 모델의 input으로 함. output은 one-hot encoded label으로 설정.
-      - 적은 데이터로 인해 발생하는 overfitting을 방지하기 위해, Group effect를 추가 고려
+      - 적은 수의 고차원 matrix 데이터(time series mRNA)로부터 label 및 biomarker을 찾는 모델 개발
+      - 변수를 줄이기 위한 데이터 전처리 수행
+        - Rscript의 DEG 패키지를 이용하여 p-value 검출하고 one-hot encoding하여 input으로 사용
+      - Overfitting 방지: 적은 데이터로 인해 발생하는 overfitting을 방지하기 위해, Group effect를 추가
       - Multiple selection이 될 경우를 고려하여 CMCL Loss (KL Divergence) 사용
-      - 변수에 비해 데이터가 굉장히 적고, time 정보를 살릴 수 없었던 점이 아쉬웠던 점.
   - title: In silico experiment system
     excerpt: Methods
     time: 2018
     summary: |
-      - 웹에서의 In silico experiment를 위한 설계 수행
-      - Flask로 분석 파이프라인 구현
+      - 웹상의 in silico experiment 서비스 개발
+        - Frontend: jQuery + bootstrap + cytoscape.js
+        - Backend: Flask (웹 서비스), python + Rscript (분석 파이프라인)
       - Rscript 이용하여 microarray data를 DEG p-value로 preprocessing
-      - Graph rendering을 위해 cytoscape.js 라이브러리 사용
-      - 실제 biomarker과 cross validation 수행
   - title: Venn-diaNet
     excerpt: BMC
     time: 2019
@@ -124,10 +149,8 @@ paper:
       Venn-diaNet: venn diagram based network propagation analysis framework for comparing multiple biological experiments
       - Rscript 이용하여 DEG p-value 검출
       - cytoscape.js를 이용하여 venn diagram rendering 개발
-        - N-group에서 사용 가능하도록 설계
-        - Edge weight를 이용하여 node들의 positioning을 설정하고, 이에 따라 venn diagram이 구성됨
-        - threshold를 이용한 선택적 rendering으로 성능 최적화
-      - venn diagram의 geneset들의 유효성 검증
+        - Edge weight를 이용하여 node position을 결정하여 N-group에서 사용 가능하도록 설계
+        - 성능 최적화: threshold를 이용한 선택적 rendering으로 성능 최적화
   - title: HTRgene
     excerpt: BMC
     time: 2019
@@ -146,23 +169,27 @@ project:
     time: 2018 ~
     summary: |
       - Game Engine 자체구현
-        - GPL License 기반 open source 목표를 달성하기 위해 직접 개발
-        - GLFW 프레임워크 기반
-        - Multicore에 최적화된 resource manager 개발
-          - Worker/Task queue 사용하여 자체 리소스 스케쥴러 개발
-        - 성능 효율성과 lag를 최소화를 위해 동적 vsync 적용
+        - GPL License 기반 open source
+        - GLFW 프레임워크 기반으로 엔진 개발
+        - 성능 최적화 설계: Multicore resource loader, scheduler 개발
+        - Lag/Delay 최소화 설계: 동적 vsync 적용, 비동기 이벤트 핸들러 기반으로 개발
         - Sound effector 기능이 들어간 Mixer 자체구현
+      - 멀티미디어 데이터 처리
+        - 다양한 비디오, 이미지, 오디오에 대해서 모두 디코딩하여 사용
         - 리버싱을 통한 타 게임 리소스 지원 (dxa)
-        - Game script runtime 설계 및 구현 (lua, lr2script)
-      - Be-music script library 개발
-        - googletest 도입으로 품질 안정화
+      - 게임 스크립트 엔진 개발
+        - 외부 스크립트 언어 연동 (lua)
+        - 리버싱을 통해 타 게임 스크립트 엔진 재개발 (lr2script)
+        - Be-music script library 개발
+      - CI
+        - googletest, Github Action 도입
   - title: bmx2ogg
     excerpt: C++
     time: 2016
     summary: |
-      - C++로 직접 audio decode/encode, mixing 모듈 개발
-        - pitch / speed change 개발
-      - travis CI 도입을 통한 품질 안정화
+      - 오디오 데이터 처리: C++로 직접 audio decode/encode, mixing 모듈 개발
+        -  4bit ~ 32bit PCM 데이터 고속 converter 및 pitch / speed change 개발
+      - CI: travis CI 도입을 통한 품질 안정화
   - title: iidx.insane.pe.kr
     excerpt: python
     tag:
@@ -171,13 +198,13 @@ project:
       - name: Web
     time: 2016 ~
     summary: |
-      - django + ORM 기반의 게임 데이터 관리 사이트
+      - 게임 데이터 관리 사이트
         - frontend: jQuery + bootstrap
-      - 추천 서비스 개발
-        - MCML을 통하여 각 유저와 곡 수치를 산출하고, 이에 따른 추천 서비스 제공
-      - maintenance 툴 개발
-        - management 자동화를 위한 script 개발 및 유지보수
-        - 데이터 수정 툴 개발을 통해 쉬운 유지보수
+        - backend: django + mariaDB(ORM)
+      - 유저별 추천 서비스 개발
+        - jupyter notebook으로 유저 데이터 분석
+        - Logistic regression + Cross entropy로 유저 데이터 학습
+      - Shell 기반 CD(Continous Distribution) 구현
   - title: iBeatcon for Android
     excerpt: Android, C#
     tag:

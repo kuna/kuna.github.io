@@ -133,30 +133,25 @@ paper:
     excerpt: BIBM, Main Author
     time: 2018
     summary: |
-      - Model development which find out stress label and biomarkers from time-series mRNA.
-      - Used model input as Extracting DEG p-value from Rscript, output as one-hot encoded label
-      - Added group effect for data of small cardinality
-      - Used CMCL loss for Multiple selection
-      - Though small cardinality of learning data set, remarkable output had came out.
+      - Model development which find out stress label and biomarkers from large matrix data (time-series mRNA).
+      - Reduced dimension by pre-processing matrix data (Calculate DEG p-value and one-hot encoding)
+      - Added group effect to avoid overfitting
+      - Used CMCL loss for multiple label selection
   - title: In silico experiment system
     excerpt: Methods
     time: 2018
     summary: |
-      - In silico experiment in Web
-      - Implementation of analyze pipeline with Flask
-      - Preprocessing: DEG from Rscript
-      - Used cytoscape.js for Graph rendering
-      - Cross validation with real biomarker
+      - In silico experiment delivered as Web application
+      - Front: jquery + bootstrap + cytoscape.js
+      - Backend: Flask + Rscript for data pipeline
   - title: Venn-diaNet
     excerpt: BMC
     time: 2019
     summary: |
       Venn-diaNet: venn diagram based network propagation analysis framework for comparing multiple biological experiments
-      - Preprocessing: DEG from Rscript
-      - Developed venn diagram rendering based on cytoscape.js
-        - Usable for N-group
-        - Venn diagram and node element positioning using Edge weight
-        - Performance improvement using threshold for selective rendering.
+      - Improved venn diagram rendering method for biomarkers
+      - Venn diagram and node element positioning using Edge weight, which makes capable for N-group diagram
+      - Optimize: performance improvement using threshold for selective rendering.
   - title: HTRgene
     excerpt: BMC
     time: 2019

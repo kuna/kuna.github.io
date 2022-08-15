@@ -21,7 +21,7 @@ experience:
         - 코드 퀄러티 중점 개발: Test Coverage 향상, 리팩토링, Peer review
         - 문서화 수행
       - 대규모 스케쥴러 개발
-        - 요구사항에 맞도록 2~3 Billion가량의 작업 스케쥴링
+        - 요구사항에 맞도록 2~3 Billion 가량의 작업 스케쥴링
       - MSA에서의 모니터링 및 추적 툴 개발
   - title: aipets
     image: aipets.png
@@ -37,13 +37,13 @@ experience:
         - 확장 및 모니터링 가능하도록 설계 진행
         - CW + ECS + ElasticCache + MySQL + MongoDB + SQS 기술 스택 사용
       - 백엔드 서비스 설계 및 개발
-        - Node.js + Go + protobuf 기반 마이크로서비스 설계 및 개발
+        - Node.js(Typescript) + Go + protobuf 기반 마이크로서비스 설계 및 개발
         - 유저 서비스 및 위치 트래킹 & 공유 서비스 개발
       - CI/CD
         - Github Actions를 통한 QA automation 및 deployment pipeline
       - Management
         - 개발 진행에 있어서 서로 blocking 되지 않도록 하는 데 중점
-        - Blocking 되지 않도록 짧게 자주 sprint / meeting 진행
+        - Blocking 상황의 빠른 파악 및 진행 위해 short-term short-time sprint / meeting 진행
         - 설계 및 개발사항 문서화 및 참여 독려
   - title: TmaxData
     image: tmax.jpg
